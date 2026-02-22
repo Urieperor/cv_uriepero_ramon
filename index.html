@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uriepero Ramón | Industrial Engineer | Automation & Energy Efficiency Specialist</title>
+    <title>Ramón Uriepero | Senior Ingenieur (Industrie) | Spezialist für Automatisierung & Instandhaltung</title>
     
-    <!-- Meta SEO Optimizados -->
-    <meta name="description" content="Industrial Engineer specialized in industrial automation, energy efficiency, and technical project management. Certified in electrical, thermal, gas, and elevator installations. International experience.">
-    <meta name="keywords" content="industrial engineer, automation, energy efficiency, PLC, robotics, electrical installations, elevators, certifications">
-    <meta name="author" content="Uriepero Ramón">
+    <!-- Meta SEO Optimiert für DACH-Raum -->
+    <meta name="description" content="Senior Ingenieur (Industrie) mit EU-anerkanntem Abschluss und Schlüsselzertifizierungen (VCA, Automatisierung, AutoCAD). Spezialist für Prozessoptimierung, technische Instandhaltung und Arbeitssicherheit.">
+    <meta name="keywords" content="Senior Ingenieur, Automatisierungstechnik, Instandhaltungsspezialist, VCA zertifiziert, EU Ingenieursabschluss, Prozessoptimierung, Technischer Betrieb, Industrielle Automatisierung, Schweiz Jobs">
+    <meta name="author" content="Ramón Uriepero">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Uriepero Ramón | Industrial Engineer">
-    <meta property="og:description" content="Specialist in industrial automation, energy efficiency and technical project management with international experience.">
-    <meta property="og:image" content="https://i.ibb.co/KpQ9P9Ht/Perfil.jpg">
+    <meta property="og:title" content="Ramón Uriepero | Ingenieur (Industrie)">
+    <meta property="og:description" content="Senior Ingenieur (Industrie) mit EU-anerkanntem Abschluss & Schlüsselzertifizierungen (VCA, AutoCAD, Automatisierung).">
+    <meta property="og:image" content="images/profile-optimized.jpg">
     <meta property="og:url" content="https://urieperor.github.io/cv_uriepero_ramon/">
     <meta property="og:type" content="website">
     
@@ -33,15 +33,15 @@
     <style>
         /* ===== VARIABLES AND RESET ===== */
         :root {
-            --primary-color: #004494;
-            --primary-dark: #003366;
-            --primary-light: #0056b3;
-            --secondary-color: #28a745;
-            --accent-color: #ffc107;
-            --text-dark: #333;
-            --text-light: #666;
-            --text-lighter: #888;
-            --bg-light: #f8f9fa;
+            --primary-color: #2c3e50;
+            --primary-dark: #1a252f;
+            --primary-light: #3498db;
+            --secondary-color: #27ae60;
+            --accent-color: #e74c3c;
+            --text-dark: #2c3e50;
+            --text-light: #7f8c8d;
+            --text-lighter: #95a5a6;
+            --bg-light: #f5f7fa;
             --bg-white: #fff;
             --border-color: #e0e0e0;
             --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
@@ -94,7 +94,7 @@
             left: 0;
             width: 60px;
             height: 3px;
-            background-color: var(--primary-color);
+            background-color: var(--primary-light);
         }
         
         h3 {
@@ -156,7 +156,7 @@
         }
         
         .btn-primary {
-            background-color: var(--primary-color);
+            background-color: var(--primary-light);
             color: white;
         }
         
@@ -168,30 +168,30 @@
         
         .btn-secondary {
             background-color: transparent;
-            color: var(--primary-color);
-            border: 2px solid var(--primary-color);
+            color: var(--primary-light);
+            border: 2px solid var(--primary-light);
         }
         
         .btn-secondary:hover {
-            background-color: var(--primary-color);
+            background-color: var(--primary-light);
             color: white;
             transform: translateY(-3px);
-        }
-        
-        .btn-pdf {
-            background-color: var(--secondary-color);
-            color: white;
-            margin-left: 10px;
-        }
-        
-        .btn-pdf:hover {
-            background-color: #218838;
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-hover);
         }
         
         .highlight {
-            color: var(--primary-color);
+            color: var(--primary-light);
+        }
+        
+        .eu-badge {
+            display: inline-block;
+            background-color: rgba(39, 174, 96, 0.1);
+            color: var(--secondary-color);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-left: 10px;
+            border: 1px solid rgba(39, 174, 96, 0.3);
         }
         
         /* ===== LANGUAGE SWITCHER ===== */
@@ -218,22 +218,50 @@
         }
         
         .lang-btn.active {
-            background-color: var(--primary-color);
+            background-color: var(--primary-light);
             color: white;
-            border-color: var(--primary-color);
+            border-color: var(--primary-light);
         }
         
         .lang-btn:hover:not(.active) {
             background-color: var(--bg-light);
         }
         
-        /* ===== CONTENT BY LANGUAGE ===== */
-        .lang-content {
-            display: none;
+        /* ===== PERSONAL DETAILS SECTION ===== */
+        .personal-details {
+            background-color: var(--bg-white);
+            padding: 40px 0;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
         }
         
-        .lang-content.active {
-            display: block;
+        .details-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .detail-item {
+            text-align: center;
+            padding: 20px;
+            min-width: 200px;
+        }
+        
+        .detail-item i {
+            font-size: 2rem;
+            color: var(--primary-light);
+            margin-bottom: 15px;
+        }
+        
+        .detail-item h4 {
+            margin-bottom: 5px;
+            color: var(--primary-dark);
+        }
+        
+        .detail-item p {
+            color: var(--text-light);
         }
         
         /* ===== HEADER AND NAVIGATION ===== */
@@ -295,7 +323,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background-color: var(--primary-color);
+            background-color: var(--primary-light);
             transition: var(--transition);
         }
         
@@ -305,7 +333,7 @@
         }
         
         .nav-links a.active {
-            color: var(--primary-color);
+            color: var(--primary-light);
         }
         
         .mobile-menu-btn {
@@ -392,6 +420,28 @@
             object-position: center top;
         }
         
+        /* Language Badges */
+        .language-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 25px 0;
+        }
+        
+        .language-badge {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.15);
+            color: white;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .language-badge i {
+            margin-right: 5px;
+        }
+        
         /* ===== ABOUT SECTION ===== */
         .about {
             background-color: var(--bg-light);
@@ -439,7 +489,7 @@
         .stat-number {
             font-size: 2.5rem;
             font-weight: 700;
-            color: var(--primary-color);
+            color: var(--primary-light);
             display: block;
             line-height: 1;
         }
@@ -448,6 +498,52 @@
             font-size: 0.9rem;
             color: var(--text-light);
             margin-top: 5px;
+        }
+        
+        /* ===== PROFESSIONAL PROFILE SECTION ===== */
+        .profile-section {
+            background-color: var(--bg-white);
+        }
+        
+        .profile-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .profile-card {
+            background: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-top: 4px solid var(--primary-light);
+        }
+        
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .profile-card i {
+            font-size: 2.5rem;
+            color: var(--primary-light);
+            margin-bottom: 20px;
+        }
+        
+        .profile-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .profile-card p {
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+        
+        .profile-card strong {
+            color: var(--secondary-color);
         }
         
         /* ===== EXPERIENCE SECTION ===== */
@@ -464,7 +560,7 @@
             top: 0;
             height: 100%;
             width: 2px;
-            background-color: var(--primary-color);
+            background-color: var(--primary-light);
         }
         
         .timeline-item {
@@ -477,7 +573,7 @@
             position: absolute;
             left: 0;
             top: 0;
-            background-color: var(--primary-color);
+            background-color: var(--primary-light);
             color: white;
             padding: 5px 15px;
             border-radius: 20px;
@@ -520,11 +616,11 @@
             content: '▸';
             position: absolute;
             left: 0;
-            color: var(--primary-color);
+            color: var(--primary-light);
         }
         
         .company-link {
-            color: var(--primary-color);
+            color: var(--primary-light);
             text-decoration: underline;
         }
         
@@ -545,9 +641,61 @@
             font-style: italic;
         }
         
+        /* ===== KEY PROJECTS SECTION ===== */
+        .projects {
+            background-color: var(--bg-light);
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .project-card:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-5px);
+        }
+        
+        .project-content {
+            padding: 25px;
+        }
+        
+        .project-title {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .project-company {
+            color: var(--primary-light);
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .project-achievement {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--secondary-color);
+            padding: 12px 15px;
+            margin-top: 15px;
+            font-style: italic;
+        }
+        
+        .project-achievement strong {
+            color: var(--secondary-color);
+        }
+        
         /* ===== SKILLS SECTION ===== */
         .skills {
-            background-color: var(--bg-light);
+            background-color: var(--bg-white);
         }
         
         .skills-container {
@@ -557,7 +705,7 @@
         }
         
         .skill-category {
-            background-color: var(--bg-white);
+            background-color: var(--bg-light);
             padding: 30px;
             border-radius: var(--border-radius);
             box-shadow: var(--shadow);
@@ -588,15 +736,25 @@
         }
         
         .skill-tag {
-            background-color: rgba(0, 68, 148, 0.1);
-            color: var(--primary-color);
+            background-color: rgba(52, 152, 219, 0.1);
+            color: var(--primary-light);
             padding: 8px 15px;
             border-radius: 20px;
             font-size: 0.9rem;
             font-weight: 500;
         }
         
+        .skill-tag.highlight {
+            background-color: rgba(39, 174, 96, 0.1);
+            color: var(--secondary-color);
+            border: 1px solid rgba(39, 174, 96, 0.2);
+        }
+        
         /* ===== CERTIFICATIONS SECTION ===== */
+        .certifications-section {
+            background-color: var(--bg-light);
+        }
+        
         .certifications-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -605,10 +763,11 @@
         
         .cert-card {
             background-color: var(--bg-white);
-            border-left: 4px solid var(--primary-color);
+            border-left: 4px solid var(--primary-light);
             padding: 20px;
             border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            text-align: center;
             transition: var(--transition);
         }
         
@@ -620,11 +779,23 @@
         .cert-card h4 {
             color: var(--primary-color);
             margin-bottom: 10px;
+            font-size: 1rem;
         }
         
         .cert-card p {
             color: var(--text-light);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+        
+        .cert-badge {
+            display: inline-block;
+            background-color: #e1f5fe;
+            color: var(--primary-light);
+            font-size: 0.8rem;
+            padding: 3px 10px;
+            border-radius: 12px;
+            margin-top: 5px;
         }
         
         /* ===== EDUCATION SECTION ===== */
@@ -649,7 +820,7 @@
         }
         
         .education-icon {
-            background-color: var(--primary-color);
+            background-color: var(--primary-light);
             color: white;
             display: flex;
             align-items: center;
@@ -680,8 +851,8 @@
         }
         
         .education-content .period {
-            background-color: rgba(0, 68, 148, 0.1);
-            color: var(--primary-color);
+            background-color: rgba(52, 152, 219, 0.1);
+            color: var(--primary-light);
             padding: 5px 10px;
             border-radius: 4px;
             font-size: 0.9rem;
@@ -691,7 +862,7 @@
         
         /* ===== CONTACT SECTION ===== */
         .contact {
-            background-color: var(--bg-light);
+            background-color: var(--bg-white);
         }
         
         .contact-container {
@@ -707,7 +878,7 @@
         }
         
         .contact-card {
-            background-color: var(--bg-white);
+            background-color: var(--bg-light);
             padding: 25px;
             border-radius: var(--border-radius);
             box-shadow: var(--shadow);
@@ -723,8 +894,8 @@
         }
         
         .contact-icon {
-            background-color: rgba(0, 68, 148, 0.1);
-            color: var(--primary-color);
+            background-color: rgba(52, 152, 219, 0.1);
+            color: var(--primary-light);
             width: 60px;
             height: 60px;
             border-radius: 50%;
@@ -740,41 +911,6 @@
         
         .contact-details p {
             color: var(--text-light);
-        }
-        
-        .contact-form {
-            background-color: var(--bg-white);
-            padding: 30px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-        
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid var(--border-color);
-            border-radius: var(--border-radius);
-            font-family: 'Roboto', sans-serif;
-            font-size: 1rem;
-            transition: var(--transition);
-        }
-        
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(0, 68, 148, 0.1);
         }
         
         /* ===== FOOTER ===== */
@@ -826,7 +962,7 @@
         }
         
         .social-links a:hover {
-            background-color: var(--primary-color);
+            background-color: var(--primary-light);
             transform: translateY(-3px);
         }
         
@@ -883,21 +1019,6 @@
             font-size: 0.9rem;
         }
         
-        /* ===== DOWNLOAD BUTTONS ===== */
-        .download-section {
-            text-align: center;
-            padding: 40px 0;
-            background-color: var(--bg-light);
-        }
-        
-        .download-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        
         /* ===== RESPONSIVE DESIGN ===== */
         @media (max-width: 992px) {
             h1 {
@@ -927,6 +1048,14 @@
             
             .stats {
                 justify-content: center;
+            }
+            
+            .profile-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .project-grid {
+                grid-template-columns: 1fr;
             }
         }
         
@@ -1014,11 +1143,6 @@
                 min-width: auto;
                 padding: 20px;
             }
-            
-            .download-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
         }
         
         @media (max-width: 576px) {
@@ -1040,6 +1164,24 @@
             .profile-image-container {
                 width: 200px;
                 height: 200px;
+            }
+            
+            .details-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .detail-item {
+                min-width: 100%;
+            }
+            
+            .language-badges {
+                justify-content: center;
+            }
+            
+            .language-badge {
+                font-size: 0.8rem;
+                padding: 6px 12px;
             }
         }
         
@@ -1075,9 +1217,8 @@
 <body>
     <!-- LANGUAGE SWITCHER -->
     <div class="language-switcher">
-        <button class="lang-btn active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="nl">NL</button>
-        <button class="lang-btn" data-lang="de">DE</button>
+        <span class="lang-btn active">DE</span>
+        <a href="index.html" class="lang-btn">EN</a>
     </div>
 
     <!-- HEADER -->
@@ -1086,42 +1227,23 @@
             <div class="nav-container">
                 <a href="#home" class="logo">
                     <i class="fas fa-user-tie"></i>
-                    <span class="lang-en">Uriepero Ramón</span>
-                    <span class="lang-nl" style="display: none;">Uriepero Ramón</span>
-                    <span class="lang-de" style="display: none;">Uriepero Ramón</span>
+                    <span>Ramón Uriepero</span>
+                    <span class="eu-badge">EU-anerkanntes Ingenieur-Diplom</span>
                 </a>
                 
                 <nav class="nav-links">
-                    <a href="#home" class="active lang-en">Home</a>
-                    <a href="#home" class="lang-nl" style="display: none;">Home</a>
-                    <a href="#home" class="lang-de" style="display: none;">Start</a>
-                    
-                    <a href="#about" class="lang-en">About</a>
-                    <a href="#about" class="lang-nl" style="display: none;">Over</a>
-                    <a href="#about" class="lang-de" style="display: none;">Über</a>
-                    
-                    <a href="#experience" class="lang-en">Experience</a>
-                    <a href="#experience" class="lang-nl" style="display: none;">Ervaring</a>
-                    <a href="#experience" class="lang-de" style="display: none;">Erfahrung</a>
-                    
-                    <a href="#skills" class="lang-en">Skills</a>
-                    <a href="#skills" class="lang-nl" style="display: none;">Vaardigheden</a>
-                    <a href="#skills" class="lang-de" style="display: none;">Fähigkeiten</a>
-                    
-                    <a href="#certifications" class="lang-en">Certifications</a>
-                    <a href="#certifications" class="lang-nl" style="display: none;">Certificeringen</a>
-                    <a href="#certifications" class="lang-de" style="display: none;">Zertifizierungen</a>
-                    
-                    <a href="#education" class="lang-en">Education</a>
-                    <a href="#education" class="lang-nl" style="display: none;">Opleiding</a>
-                    <a href="#education" class="lang-de" style="display: none;">Bildung</a>
-                    
-                    <a href="#contact" class="lang-en">Contact</a>
-                    <a href="#contact" class="lang-nl" style="display: none;">Contact</a>
-                    <a href="#contact" class="lang-de" style="display: none;">Kontakt</a>
+                    <a href="#home" class="active">Start</a>
+                    <a href="#about">Über mich</a>
+                    <a href="#profile">Profil</a>
+                    <a href="#experience">Berufserfahrung</a>
+                    <a href="#projects">Schlüsselprojekte</a>
+                    <a href="#skills">Kompetenzen</a>
+                    <a href="#certifications">Zertifizierungen</a>
+                    <a href="#education">Ausbildung</a>
+                    <a href="#contact">Kontakt</a>
                 </nav>
                 
-                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menü öffnen/schließen">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -1130,1725 +1252,615 @@
         <!-- Mobile Menu -->
         <div class="mobile-menu" id="mobileMenu">
             <nav class="nav-links">
-                <a href="#home" class="active lang-en">Home</a>
-                <a href="#home" class="lang-nl" style="display: none;">Home</a>
-                <a href="#home" class="lang-de" style="display: none;">Start</a>
-                
-                <a href="#about" class="lang-en">About</a>
-                <a href="#about" class="lang-nl" style="display: none;">Over</a>
-                <a href="#about" class="lang-de" style="display: none;">Über</a>
-                
-                <a href="#experience" class="lang-en">Experience</a>
-                <a href="#experience" class="lang-nl" style="display: none;">Ervaring</a>
-                <a href="#experience" class="lang-de" style="display: none;">Erfahrung</a>
-                
-                <a href="#skills" class="lang-en">Skills</a>
-                <a href="#skills" class="lang-nl" style="display: none;">Vaardigheden</a>
-                <a href="#skills" class="lang-de" style="display: none;">Fähigkeiten</a>
-                
-                <a href="#certifications" class="lang-en">Certifications</a>
-                <a href="#certifications" class="lang-nl" style="display: none;">Certificeringen</a>
-                <a href="#certifications" class="lang-de" style="display: none;">Zertifizierungen</a>
-                
-                <a href="#education" class="lang-en">Education</a>
-                <a href="#education" class="lang-nl" style="display: none;">Opleiding</a>
-                <a href="#education" class="lang-de" style="display: none;">Bildung</a>
-                
-                <a href="#contact" class="lang-en">Contact</a>
-                <a href="#contact" class="lang-nl" style="display: none;">Contact</a>
-                <a href="#contact" class="lang-de" style="display: none;">Kontakt</a>
+                <a href="#home" class="active">Start</a>
+                <a href="#about">Über mich</a>
+                <a href="#profile">Profil</a>
+                <a href="#experience">Berufserfahrung</a>
+                <a href="#projects">Schlüsselprojekte</a>
+                <a href="#skills">Kompetenzen</a>
+                <a href="#certifications">Zertifizierungen</a>
+                <a href="#education">Ausbildung</a>
+                <a href="#contact">Kontakt</a>
             </nav>
         </div>
     </header>
 
-    <!-- ENGLISH CONTENT -->
-    <main class="lang-content active" id="content-en">
-        <!-- HERO SECTION -->
-        <section class="hero" id="home">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text fade-in-up">
-                        <h1>Uriepero Ramón<br><span class="highlight">Industrial Engineer</span></h1>
-                        <p>Specialist in industrial automation, energy efficiency and technical project management. Over 20 years of experience in industrial installations, elevators and robotics with international official certifications.</p>
-                        <div class="hero-buttons">
-                            <a href="#contact" class="btn btn-primary">Contact Now</a>
-                            <a href="#about" class="btn btn-secondary">View Profile</a>
-                            <button class="btn btn-pdf" id="downloadPdf">Download PDF CV</button>
-                        </div>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in-up">
+                    <h1>Ramón Uriepero</h1>
+                    <p>Senior Ingenieur (Industrie) | <strong>Spezialist für Automatisierung, Instandhaltung & Prozessoptimierung</strong></p>
+                    <p>Ergebnisorientierter Ingenieur mit <strong>über 20 Jahren praktischer Erfahrung</strong> in der Optimierung komplexer industrieller Systeme in ganz Europa. Verbindet fundiertes technisches Wissen mit praktischer Expertise in Automatisierung, Arbeitssicherheit (VCA) und Zuverlässigkeitstechnik. Inhaber wichtiger europäischer Zertifizierungen und eines <strong>EU-anerkannten Ingenieurabschlusses</strong>.</p>
+                    
+                    <div class="language-badges">
+                        <span class="language-badge"><i class="fas fa-language"></i> Spanisch (Muttersprache)</span>
+                        <span class="language-badge"><i class="fas fa-language"></i> Englisch (Verhandlungssicher)</span>
+                        <span class="language-badge"><i class="fas fa-language"></i> Deutsch (Grundkenntnisse - im Lernprozess)</span>
+                        <span class="language-badge"><i class="fas fa-passport"></i> EU-Arbeitserlaubnis</span>
+                        <span class="language-badge"><i class="fas fa-certificate"></i> VCA & Mehrere EU-Zertifikate</span>
                     </div>
-                    <div class="hero-image fade-in-up delay-1">
-                        <div class="profile-image-container">
-                            <img src="https://i.ibb.co/KpQ9P9Ht/Perfil.jpg" alt="Uriepero Ramón - Industrial Engineer">
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Kontakt aufnehmen</a>
+                        <a href="resources/Uriepero_Ramon_Lebenslauf_DE.pdf" class="btn btn-secondary" download><i class="fas fa-download"></i> Lebenslauf (PDF)</a>
+                    </div>
+                </div>
+                <div class="hero-image fade-in-up delay-1">
+                    <div class="profile-image-container">
+                        <img src="images/perfil-optimizado.jpg" alt="Ramón Uriepero - Senior Ingenieur (Industrie)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERSONAL DETAILS SECTION -->
+    <section class="personal-details">
+        <div class="container">
+            <div class="details-container">
+                <div class="detail-item fade-in-up">
+                    <i class="fas fa-passport"></i>
+                    <h4>Arbeitsstatus in der EU</h4>
+                    <p>Volles Arbeitsrecht in EU/EFTA</p>
+                    <p><small>(Inklusive Schweiz)</small></p>
+                </div>
+                
+                <div class="detail-item fade-in-up delay-1">
+                    <i class="fas fa-id-card"></i>
+                    <h4>Führerschein</h4>
+                    <p>Klasse B</p>
+                </div>
+                
+                <div class="detail-item fade-in-up delay-2">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Standort & Mobilität</h4>
+                    <p>Vitoria-Gasteiz, Spanien</p>
+                    <p><small><strong>Verfügbar für internationale Möglichkeiten</strong></small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Über mich</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image fade-in-up">
+                    <div class="profile-image-container">
+                        <img src="images/perfil-optimizado.jpg" alt="Ramón Uriepero - Senior Ingenieur (Industrie)">
+                    </div>
+                </div>
+                <div class="about-text fade-in-up delay-1">
+                    <h2>Senior Ingenieur (Industrie) <span class="highlight">Spezialisiert</span></h2>
+                    <p>Ein vielseitiger Ingenieur, dessen Stärke in der Analyse komplexer Systeme, der Identifizierung von Optimierungsansätzen und der Umsetzung praktischer Lösungen liegt, die Produktivität, Sicherheit und Betriebsintegrität verbessern.</p>
+                    <p>Mein Profil kombiniert eine formale Ingenieurausbildung mit umfangreicher praktischer Erfahrung. Ich bin in mehreren offiziellen Qualifikationen zertifiziert und besitze das international anerkannte VCA-Basis-Sicherheitszertifikat. Ich bin ergebnisorientiert und in der Lage, umfassende Projekte zu leiten und Prozesse in anspruchsvollen industriellen Umgebungen zu optimieren.</p>
+                    <p>Meine laufende Master-Spezialisierung in <strong>Elektronik- und Automatisierungstechnik</strong> hält mich an der Spitze der Industrietechnologie und ergänzt meine praktische Erfahrung mit fortgeschrittenem theoretischem Wissen.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-text">Jahre Erfahrung</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">12+</span>
+                            <span class="stat-text">EU-Zertifizierungen</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-text">International mobil</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- ABOUT SECTION -->
-        <section class="about section" id="about">
-            <div class="container">
-                <div class="section-title">
-                    <h2>About Me</h2>
+    <!-- PROFESSIONAL PROFILE SECTION -->
+    <section class="profile-section section" id="profile">
+        <div class="container">
+            <div class="section-title">
+                <h2>Berufliches Profil</h2>
+            </div>
+            
+            <div class="profile-cards">
+                <div class="profile-card fade-in-up">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Prozess- & Betriebsingenieur</h3>
+                    <p>Spezialisiert auf die Steigerung der betrieblichen Exzellenz durch Prozessoptimierung, Lean-Methoden und datengestützte Analysen. Bewährte Erfolgsbilanz bei der signifikanten Verbesserung von Durchsatz und Effizienz in der Hightech-Fertigung.</p>
+                    <p><strong>Schlüsselerfolg:</strong> Steigerung der monatlichen Produktionsleistung um <strong>150%</strong> durch Montagelinienoptimierung und Methodenredesign.</p>
                 </div>
-                
-                <div class="about-content">
-                    <div class="about-image fade-in-up">
-                        <div class="profile-image-container">
-                            <img src="https://i.ibb.co/KpQ9P9Ht/Perfil.jpg" alt="Uriepero Ramón - Professional profile">
-                        </div>
-                    </div>
-                    <div class="about-text fade-in-up delay-1">
-                        <h2>Industrial Engineer <span class="highlight">Specialized</span></h2>
-                        <p>Industrial Engineer certified in Spain with specialization in <strong>industrial automation, energy efficiency and technical project management</strong>. My experience includes installation, maintenance and modernization of industrial systems, elevators and robotics.</p>
-                        <p>Certified in multiple official qualifications (low voltage, thermal, gas, refrigeration, elevators). Results-oriented, with ability to lead comprehensive projects and optimize processes in industrial and building environments.</p>
-                        <p>Currently working on international projects in the Netherlands through a temporary employment agency (uitzendbureau), applying European industrial and food safety regulations in high voltage installations and PLC control systems.</p>
+                <div class="profile-card fade-in-up delay-1">
+                    <i class="fas fa-hard-hat"></i>
+                    <h3>Instandhaltungs- & Zuverlässigkeitsspezialist</h3>
+                    <p>Umfangreicher Hintergrund in vorbeugender und korrektiver Instandhaltung komplexer Systeme: Industrierobotik (KUKA), Aufzüge, pneumatische/hydraulische Systeme und vollständige technische Gebäudeverwaltung.</p>
+                    <p><strong>Schlüsselerfolg:</strong> Reduzierung ungeplanter Ausfallzeiten in kritischen 24/7-Systemen auf historisch niedrige Werte, Maximierung der Anlagennutzung und Betriebskontinuität.</p>
+                </div>
+                <div class="profile-card fade-in-up delay-2">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Zertifizierter Technischer Fachmann</h3>
+                    <p>Besitzt wesentliche europäische Zertifizierungen, die technische Kompetenzen und Sicherheitsbewusstsein validieren und die Einhaltung von Industriestandards auf EU/EFTA-Märkten gewährleisten.</p>
+                    <p><strong>Schlüsselqualifikationen:</strong> VCA-Basissicherheit, Offizieller Aufzugstechniker (SEPE), Fortgeschrittenes 2D/3D AutoCAD, Photovoltaik-Systemdesign, Interner Qualitätsauditor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Berufserfahrung</h2>
+            </div>
+            
+            <div class="experience-timeline">
+                <!-- Ara Industries consolidated experience -->
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-date">Mai 2025 - Heute</div>
+                    <div class="timeline-content">
+                        <h3>Industrie-Elektriker / Technischer Monteur</h3>
+                        <span class="company">Ara Industries B.V. <a href="http://www.ara-industries.nl/" target="_blank" class="company-link">(Webseite)</a> | Niederlande</span>
+                        <p><strong>Zwei separate Einsätze (Mai-Okt 2025 und Jan 2026-Heute)</strong> beim selben Hightech-Hersteller, die geschätzte Expertise und erneute Beauftragung für neue Projektphasen demonstrieren.</p>
                         
-                        <div class="stats">
-                            <div class="stat-item">
-                                <span class="stat-number">20+</span>
-                                <span class="stat-text">Years Experience</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">150+</span>
-                                <span class="stat-text">Projects</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">12</span>
-                                <span class="stat-text">Certifications</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">3</span>
-                                <span class="stat-text">Languages</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- EXPERIENCE SECTION -->
-        <section class="experience section" id="experience">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Work Experience</h2>
-                </div>
-                
-                <div class="experience-timeline">
-                    <!-- Current experience through Fareon -->
-                    <div class="timeline-item fade-in-up">
-                        <div class="timeline-date">Apr 2025 - Present</div>
-                        <div class="timeline-content">
-                            <h3>Industrial Project Electrician</h3>
-                            <span class="company">Fareon Nederland B.V. (Temporary Employment Agency/Uitzendbureau) | Netherlands</span>
-                            <p>Assigned to various industrial projects through a temporary employment agency, specializing in electrical installations, control systems, and automation for leading technology companies.</p>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Jan 2026 - Present</div>
-                                <h4>Ara Industries B.V. <a href="http://www.ara-industries.nl/" target="_blank" class="company-link">(Website)</a></h4>
-                                <ul>
-                                    <li>Development and integration of control panels and electrical systems for "Smart Tractors"</li>
-                                    <li>Implementation of HMI interfaces and telemetry systems</li>
-                                    <li>Specialization in embedded electronics and connectivity for next-generation agricultural machinery</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Nov 2025 - Dec 2025</div>
-                                <h4>Sanovo Technology B.V. <a href="https://www.sanovogroup.com/" target="_blank" class="company-link">(Website)</a></h4>
-                                <ul>
-                                    <li>Installation of control systems (PLC) and electrical panels for new fully automated processing lines</li>
-                                    <li>Ensuring continuity in high-production farms</li>
-                                    <li>Execution of high-voltage (440V/380V) electrical installations complying with European industrial and food safety regulations</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">May 2025 - Oct 2025</div>
-                                <h4>Ara Industries B.V. <a href="http://www.ara-industries.nl/" target="_blank" class="company-link">(Website)</a></h4>
-                                <ul>
-                                    <li>Development and integration of control panels and electrical systems for "Smart Tractors"</li>
-                                    <li>Implementation of HMI interfaces and telemetry systems</li>
-                                    <li>Specialization in embedded electronics and connectivity for agricultural machinery</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Apr 2025 - May 2025</div>
-                                <h4>Teijin Aramid B.V. <a href="http://www.teijinaramid.com/" target="_blank" class="company-link">(Website)</a></h4>
-                                <ul>
-                                    <li>Certified "explosion proof" electrical installations in ATEX zones (Zone 1/Zone 2) for chemical industry</li>
-                                    <li>Practical application of VCA, ATEX and NEN-3140 safety regulations in high-risk environments</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Spain experience -->
-                    <div class="timeline-item fade-in-up delay-1">
-                        <div class="timeline-date">Mar 2025 - Apr 2025</div>
-                        <div class="timeline-content">
-                            <h3>Elevator Installation Technician</h3>
-                            <span class="company">Montajes Luco SL (Contractor for Orona) | Barcelona, Spain</span>
-                            <p>Complete assembly, alignment and commissioning of new elevators with Orona ICON controllers.</p>
+                        <div class="assignment-item">
+                            <div class="assignment-date">Jan 2026 - Heute</div>
+                            <h4>Zweiter Einsatz: Neue Produktionsphase</h4>
                             <ul>
-                                <li>Configuration of controllers and safety testing according to EN 81-20 standard</li>
-                                <li>Precise alignment with tolerances less than 2mm</li>
+                                <li>Fortsetzung und Weiterentwicklung der Integration elektrischer Systeme für fortschrittliche landwirtschaftliche Maschinenkabinen.</li>
+                                <li>Weitere Optimierung der Montageprozesse für neue Kabinenmodelle.</li>
                             </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- Maintenance experience Spain -->
-                    <div class="timeline-item fade-in-up delay-2">
-                        <div class="timeline-date">Sep 2024</div>
-                        <div class="timeline-content">
-                            <h3>Industrial Maintenance Engineer</h3>
-                            <span class="company">Azkarrena Garbiketak, S.L. <a href="http://www.lavanderiadetiqueta.net/" target="_blank" class="company-link">(Website)</a> | Urnieta, Basque Country</span>
-                            <p>Corrective maintenance of high-performance industrial laundry for luxury hotels.</p>
-                            <ul>
-                                <li>Diagnosis and repair of complex systems: frequency drives, pumps, steam systems and automatic chemical dispensers</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item fade-in-up delay-3">
-                        <div class="timeline-date">Feb 2023 - Dec 2023</div>
-                        <div class="timeline-content">
-                            <h3>Maintenance Engineer</h3>
-                            <span class="company">Viguam, S.L.L. | Vitoria-Gasteiz, Spain</span>
-                            <p>Comprehensive maintenance management for a portfolio of ~150 elevators.</p>
-                            <ul>
-                                <li><strong>Key achievements:</strong> 40% reduction in repetitive incidents</li>
-                                <li>Improvement of customer satisfaction from 72% to 89%</li>
-                                <li>18% decrease in maintenance cost per unit</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- Elevator Technician consolidated experience -->
-                    <div class="timeline-item fade-in-up">
-                        <div class="timeline-date">Dec 2019 - Dec 2022</div>
-                        <div class="timeline-content">
-                            <h3>Elevator Technician (Consolidated Experience)</h3>
-                            <span class="company">
-                                <a href="http://www.inalsazener.com/" target="_blank" class="company-link">Industrial de Elevación S.A.</a> & 
-                                <a href="https://www.bertako.eus/" target="_blank" class="company-link">Ascensores Bertako Igogaluk S.L.</a> | Basque Country, Spain
-                            </span>
-                            <p>Installation, maintenance and comprehensive modernization of elevators.</p>
-                            <ul>
-                                <li>Maintenance and modernization of elevators with 24/7 on-call service (Oct 2022 - Dec 2022)</li>
-                                <li>Installation, maintenance and modernization of more than 120 elevators (Dec 2019 - Sep 2022)</li>
-                                <li>Use of diagnostic software (Orona, Schindler) and IPAF certification for work at height</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- Robotics experience -->
-                    <div class="timeline-item fade-in-up delay-1">
-                        <div class="timeline-date">Sep 2019 - Dec 2019</div>
-                        <div class="timeline-content">
-                            <h3>Robotics and Automation Operator</h3>
-                            <span class="company">Eroski S.Coop. | Distribution Center, Basque Country</span>
-                            <p>Operation, maintenance and optimization of robotic cell with KUKA KR 1000 Titan robot.</p>
-                            <ul>
-                                <li><strong>Key achievement:</strong> Reduction of palletizing cycle time from 90 to 68 seconds</li>
-                                <li>Implementation of early warning system for wear through Siemens S7-1200 PLC and sensors</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- Hotel maintenance experience -->
-                    <div class="timeline-item fade-in-up delay-2">
-                        <div class="timeline-date">2018 - 2019</div>
-                        <div class="timeline-content">
-                            <h3>Hotel Maintenance & Technical Services</h3>
-                            <span class="company">Various companies | Spain</span>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Aug 2019</div>
-                                <h4>Soft Evolution SL | Hotel Valle de Liendo, Cantabria</h4>
-                                <ul>
-                                    <li>Comprehensive maintenance of 4-star hotel systems</li>
-                                    <li>Access control (120 rooms), CCTV (32 IP cameras), HVAC, laundry and main electrical panel (400A)</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Oct 2018 - Nov 2018</div>
-                                <h4>Domonorte Tecnologia S.L. | Vizcaya</h4>
-                                <ul>
-                                    <li>Turnkey projects: electrical installations in industrial warehouses</li>
-                                    <li>IP surveillance systems, structured data networks (Cat 6A) and basic home automation</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Jun 2018 - Jul 2018</div>
-                                <h4>Electricidad y Electrónica EDI S | Hotel in Bilbao</h4>
-                                <ul>
-                                    <li>Complete electrical renovation of a 3-star hotel</li>
-                                    <li>New distribution, lighting, individual climate control, telecommunications and final certification</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Venezuela experience -->
-                    <div class="timeline-item fade-in-up delay-3">
-                        <div class="timeline-date">2011 - 2017</div>
-                        <div class="timeline-content">
-                            <h3>Experience in Venezuela</h3>
-                            <span class="company">
-                                <a href="http://www.pdvsa.com/?lang=en" target="_blank" class="company-link">PDVSA</a> | Various companies | Venezuela
-                            </span>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Sep 2016 - Aug 2017</div>
-                                <h4>Maintenance Engineer | UR Ingeniería C.A., Caracas</h4>
-                                <ul>
-                                    <li>Maintenance and repair of residential, commercial and industrial elevators</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Mar 2012 - Jul 2016</div>
-                                <h4>Freelance Industrial Engineer</h4>
-                                <ul>
-                                    <li>Design, implementation and commissioning of automated production systems</li>
-                                    <li>Design of electrical and control panels</li>
-                                    <li>Project planning and management with AutoCAD and Primavera P6</li>
-                                    <li>Leadership of multidisciplinary teams for industrial process automation</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Sep 2011 - Feb 2012</div>
-                                <h4>Planning Engineer/Project Engineer | Industrial Service de Venezuela C.A., Punto Fijo</h4>
-                                <ul>
-                                    <li>Planning, coordination and control of civil construction projects</li>
-                                    <li>Management of deadlines, costs and resources with MS Project and Primavera P6</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Mar 2011 - Sep 2011</div>
-                                <h4>Quality Engineer (QA) | PDVSA, Paraguaná Refining Center</h4>
-                                <ul>
-                                    <li>Quality audits and assurance under ISO 9001 and ISO 14000 standards</li>
-                                    <li>Risk management and improvement of production processes</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SKILLS SECTION -->
-        <section class="skills section" id="skills">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Technical Skills</h2>
-                </div>
-                
-                <div class="skills-container">
-                    <div class="skill-category fade-in-up">
-                        <h3><i class="fas fa-robot"></i> Automation and Control</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">PLC Programming (Siemens, Orona, Schindler)</span>
-                            <span class="skill-tag">Drive parameterization</span>
-                            <span class="skill-tag">Industrial robotics (KUKA)</span>
-                            <span class="skill-tag">Control systems</span>
-                            <span class="skill-tag">HMI interfaces</span>
-                            <span class="skill-tag">Telemetry</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category fade-in-up delay-1">
-                        <h3><i class="fas fa-bolt"></i> Electrical Installations</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">High/Low voltage</span>
-                            <span class="skill-tag">ATEX (Explosive zones)</span>
-                            <span class="skill-tag">VCA, NEN-3140 regulations</span>
-                            <span class="skill-tag">"Explosion proof" installations</span>
-                            <span class="skill-tag">Control panels</span>
-                            <span class="skill-tag">Electrical certifications</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category fade-in-up delay-2">
-                        <h3><i class="fas fa-cogs"></i> Industrial Maintenance</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Predictive maintenance</span>
-                            <span class="skill-tag">Preventive maintenance</span>
-                            <span class="skill-tag">Corrective maintenance</span>
-                            <span class="skill-tag">Asset management</span>
-                            <span class="skill-tag">Fault diagnosis</span>
-                            <span class="skill-tag">Process optimization</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category fade-in-up delay-3">
-                        <h3><i class="fas fa-tools"></i> Elevators and Lifting</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Elevator installation</span>
-                            <span class="skill-tag">Comprehensive maintenance</span>
-                            <span class="skill-tag">Modernization</span>
-                            <span class="skill-tag">EN 81-20 regulation</span>
-                            <span class="skill-tag">TTAE certification</span>
-                            <span class="skill-tag">IPAF (work at height)</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category fade-in-up">
-                        <h3><i class="fas fa-laptop-code"></i> Software and Design</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Advanced AutoCAD 2D/3D</span>
-                            <span class="skill-tag">MS Project</span>
-                            <span class="skill-tag">Primavera P6</span>
-                            <span class="skill-tag">Technical design</span>
-                            <span class="skill-tag">Project management</span>
-                            <span class="skill-tag">ISO 9001/14000</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category fade-in-up delay-1">
-                        <h3><i class="fas fa-language"></i> Languages</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Spanish (Native)</span>
-                            <span class="skill-tag">English (B2)</span>
-                            <span class="skill-tag">German (Basic)</span>
-                            <span class="skill-tag">Technical communication</span>
-                            <span class="skill-tag">Multilingual documentation</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CERTIFICATIONS SECTION -->
-        <section class="certifications section" id="certifications">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Official Certifications</h2>
-                </div>
-                
-                <div class="certifications-grid">
-                    <div class="cert-card fade-in-up">
-                        <h4>Low Voltage Installer (CCBT)</h4>
-                        <p>Official certification for low voltage electrical installations.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up delay-1">
-                        <h4>Thermal Installer-Maintainer (IMT)</h4>
-                        <p>Qualification for thermal installations in buildings.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up delay-2">
-                        <h4>Gas Installer Category IG-A</h4>
-                        <p>Certification for category A gas installations.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up delay-3">
-                        <h4>Certified Elevator Technician (TTAE)</h4>
-                        <p>Official certification for elevator installation and maintenance.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up">
-                        <h4>Refrigeration Systems Handler (GF1)</h4>
-                        <p>Certification for handling refrigeration systems.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up delay-1">
-                        <h4>Refrigeration Installer-Maintainer (IF1)</h4>
-                        <p>Qualification for refrigeration installations.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up delay-2">
-                        <h4>Plumbing Installer (IA)</h4>
-                        <p>Certification for plumbing installations.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up delay-3">
-                        <h4>Petroleum Products (ICL2, RCL3)</h4>
-                        <p>Certification for installation and repair of petroleum products.</p>
-                    </div>
-                </div>
-                
-                <div style="text-align: center; margin-top: 40px;">
-                    <p><strong>Professional affiliations:</strong> Official College of Industrial Technical Engineers of Álava (Spain) | College of Engineers of Venezuela</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- EDUCATION SECTION -->
-        <section class="education section" id="education">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Academic Education</h2>
-                </div>
-                
-                <div class="education-container">
-                    <div class="education-card fade-in-up">
-                        <div class="education-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="education-content">
-                            <h3>Master's Degree in Industrial Engineering</h3>
-                            <span class="institution">UNED (National University of Distance Education)</span>
-                            <span class="period">2024 - Present (in progress)</span>
-                            <p>Specialty in Electronic and Automatic Engineering. Official degree that qualifies for the practice of Industrial Engineer according to Order CIN/311/2009.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="education-card fade-in-up delay-1">
-                        <div class="education-icon">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <div class="education-content">
-                            <h3>Industrial Engineer</h3>
-                            <span class="institution">Universidad Nacional Experimental Francisco de Miranda (Venezuela)</span>
-                            <span class="period">Homologated in Spain</span>
-                            <p>University degree homologated in Spain as equivalent to Technical Industrial Engineer with specialization in Mechanics.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="education-card fade-in-up delay-2">
-                        <div class="education-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <div class="education-content">
-                            <h3>Continuing Education and Specializations</h3>
-                            <span class="institution">Various institutions and certifications</span>
-                            <span class="period">2011 - Present</span>
-                            <p><strong>Specialization areas:</strong> Industrial Automation and Control, Elevator Installation and Maintenance, Energy Efficiency and Renewable Energy, Technical Design and Project Management.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- DOWNLOAD SECTION -->
-        <section class="download-section section">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Download CV</h2>
-                </div>
-                <p>Download my complete CV in different formats</p>
-                <div class="download-buttons">
-                    <button class="btn btn-primary" id="downloadHtml">Download HTML CV</button>
-                    <button class="btn btn-pdf" id="downloadPdf2">Download PDF CV</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section class="contact section" id="contact">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Contact</h2>
-                </div>
-                
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <div class="contact-card fade-in-up">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Email</h4>
-                                <p>urieperoz@gmail.com</p>
-                            </div>
                         </div>
                         
-                        <div class="contact-card fade-in-up delay-1">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Phone</h4>
-                                <p>+34 688 778 755</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-card fade-in-up delay-2">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Location</h4>
-                                <p>Vitoria-Gasteiz, Álava, Spain</p>
-                                <p><small>Available for national and international mobility</small></p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-card fade-in-up delay-3">
-                            <div class="contact-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>LinkedIn</h4>
-                                <p>linkedin.com/in/ramón-uriepero-8449307b</p>
-                            </div>
+                        <div class="assignment-item">
+                            <div class="assignment-date">Mai 2025 - Okt 2025</div>
+                            <h4>Erster Einsatz: Smart Tractor Projekt</h4>
+                            <ul>
+                                <li>Entwicklung und Integration von Steuerungsschränken und elektrischen Systemen für "Smart Traktoren".</li>
+                                <li>Implementierung von HMI-Schnittstellen und Telemetriesystemen.</li>
+                                <li><strong>Schlüsselerfolg:</strong> Steigerung der monatlichen Produktionsleistung um 150% durch Montagelinienoptimierung.</li>
+                            </ul>
                         </div>
                     </div>
-                    
-                    <div class="contact-form fade-in-up">
-                        <h3>Send me a message</h3>
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary">Send message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- DUTCH CONTENT -->
-    <main class="lang-content" id="content-nl" style="display: none;">
-        <!-- HERO SECTION DUTCH -->
-        <section class="hero" id="home-nl">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text fade-in-up">
-                        <h1>Uriepero Ramón<br><span class="highlight">Industrieel Ingenieur</span></h1>
-                        <p>Specialist in industriële automatisering, energie-efficiëntie en technisch projectmanagement. Meer dan 20 jaar ervaring in industriële installaties, liften en robotica met internationale officiële certificeringen.</p>
-                        <div class="hero-buttons">
-                            <a href="#contact-nl" class="btn btn-primary">Contact Opnemen</a>
-                            <a href="#about-nl" class="btn btn-secondary">Profiel Bekijken</a>
-                            <button class="btn btn-pdf" id="downloadPdfNl">PDF CV Downloaden</button>
-                        </div>
-                    </div>
-                    <div class="hero-image fade-in-up delay-1">
-                        <div class="profile-image-container">
-                            <img src="https://i.ibb.co/KpQ9P9Ht/Perfil.jpg" alt="Uriepero Ramón - Industrieel Ingenieur">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ABOUT SECTION DUTCH -->
-        <section class="about section" id="about-nl">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Over Mij</h2>
                 </div>
                 
-                <div class="about-content">
-                    <div class="about-image fade-in-up">
-                        <div class="profile-image-container">
-                            <img src="https://i.ibb.co/KpQ9P9Ht/Perfil.jpg" alt="Uriepero Ramón - Professioneel profiel">
-                        </div>
+                <!-- Sanovo experience -->
+                <div class="timeline-item fade-in-up delay-1">
+                    <div class="timeline-date">Nov 2025 - Dez 2025</div>
+                    <div class="timeline-content">
+                        <h3>Industrie-Elektriker</h3>
+                        <span class="company">Sanovo Technology B.V. <a href="https://www.sanovogroup.com/" target="_blank" class="company-link">(Webseite)</a> | Niederlande</span>
+                        <p>Installation von Steuerungssystemen für vollautomatische Eierverarbeitungslinien in einer lebensmittelgerechten Industrieumgebung.</p>
+                        <ul>
+                            <li>Installation von SPS-Steuerungsschränken und Ausführung von Hochspannungsinstallationen (440V/380V).</li>
+                            <li>Einhaltung strenger europäischer Industrie- und Lebensmittelsicherheitsvorschriften (HACCP-Umgebung).</li>
+                        </ul>
                     </div>
-                    <div class="about-text fade-in-up delay-1">
-                        <h2>Industrieel Ingenieur <span class="highlight">Gespecialiseerd</span></h2>
-                        <p>Industrieel Ingenieur gecertificeerd in Spanje met specialisatie in <strong>industriële automatisering, energie-efficiëntie en technisch projectmanagement</strong>. Mijn ervaring omvat installatie, onderhoud en modernisering van industriële systemen, liften en robotica.</p>
-                        <p>Gecertificeerd in meerdere officiële kwalificaties (laagspanning, thermisch, gas, koeling, liften). Resultaatgericht, met vermogen om uitgebreide projecten te leiden en processen te optimaliseren in industriële en gebouwomgevingen.</p>
-                        <p>Momenteel werkzaam aan internationale projecten in Nederland via een uitzendbureau, toepassing van Europese industriële en voedselveiligheidsvoorschriften in hoogspanningsinstallaties en PLC-besturingssystemen.</p>
-                        
-                        <div class="stats">
-                            <div class="stat-item">
-                                <span class="stat-number">20+</span>
-                                <span class="stat-text">Jaar Ervaring</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">150+</span>
-                                <span class="stat-text">Projecten</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">12</span>
-                                <span class="stat-text">Certificeringen</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">3</span>
-                                <span class="stat-text">Talen</span>
-                            </div>
-                        </div>
+                </div>
+                
+                <!-- Other Netherlands experience -->
+                <div class="timeline-item fade-in-up delay-2">
+                    <div class="timeline-date">Apr 2025 - Mai 2025</div>
+                    <div class="timeline-content">
+                        <h3>Industrie-Elektriker (ATEX-Projekte)</h3>
+                        <span class="company">Teijin Aramid B.V. <a href="http://www.teijinaramid.com/" target="_blank" class="company-link">(Webseite)</a> | Niederlande</span>
+                        <p>Zertifizierte "explosionsgeschützte" elektrische Installationen in ATEX-Zonen (Zone 1/Zone 2) für die chemische Industrie.</p>
+                        <ul>
+                            <li>Praktische Anwendung von VCA-, ATEX- und NEN-3140-Sicherheitsvorschriften in Hochrisikoumgebungen.</li>
+                            <li>Installation von Messgeräten und Motoren in explosionsgefährdeten Bereichen.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Spain experience -->
+                <div class="timeline-item fade-in-up delay-3">
+                    <div class="timeline-date">März 2025 - Apr 2025</div>
+                    <div class="timeline-content">
+                        <h3>Aufzugs-Installationstechniker</h3>
+                        <span class="company">Montajes Iuco SL (Auftragnehmer für Orona) | Barcelona, Spanien</span>
+                        <p>Komplette Montage, Ausrichtung und Inbetriebnahme neuer Aufzüge mit Orona ICON-Steuerungen.</p>
+                        <ul>
+                            <li>Konfiguration von Steuerungen und Sicherheitstests gemäß EN 81-20 Norm.</li>
+                            <li>Präzise Ausrichtung mit Toleranzen unter 2mm für einen reibungslosen Betrieb.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Maintenance experience Spain -->
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-date">Sep 2024</div>
+                    <div class="timeline-content">
+                        <h3>Instandhaltungsingenieur</h3>
+                        <span class="company">Azkarrena Garbiketak, S.L. <a href="http://www.lavanderiadetiqueta.net/" target="_blank" class="company-link">(Webseite)</a> | Urnieta, Baskenland</span>
+                        <p>Korrektive Instandhaltung von Hochleistungs-Industriewäschereien für Luxushotels.</p>
+                        <ul>
+                            <li>Diagnose und Reparatur komplexer Systeme: Frequenzumrichter, Pumpen, Dampfsysteme und automatische Chemikaliendosierer.</li>
+                            <li>Minimierung von Produktionsausfallzeiten durch effiziente Fehlersuche.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in-up delay-1">
+                    <div class="timeline-date">Feb 2023 - Dez 2023</div>
+                    <div class="timeline-content">
+                        <h3>Instandhaltungsingenieur</h3>
+                        <span class="company">Viguam, S.L.L. | Vitoria-Gasteiz, Spanien</span>
+                        <p>Umfassendes Instandhaltungsmanagement für ein Portfolio von ~150 Aufzügen.</p>
+                        <ul>
+                            <li><strong>Schlüsselerfolge:</strong> 40% Reduzierung wiederkehrender Vorfälle.</li>
+                            <li>Verbesserung der Kundenzufriedenheit von 72% auf 89%.</li>
+                            <li>18% Senkung der Instandhaltungskosten pro Einheit durch optimierte Planung.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Elevator Technician consolidated experience -->
+                <div class="timeline-item fade-in-up delay-2">
+                    <div class="timeline-date">Dez 2019 - Dez 2022</div>
+                    <div class="timeline-content">
+                        <h3>Aufzugstechniker (Konsolidierte Erfahrung)</h3>
+                        <span class="company">
+                            <a href="http://www.inelsazener.com/" target="_blank" class="company-link">Industrial de Elevación S.A.</a> & 
+                            <a href="https://www.bertako.eus/" target="_blank" class="company-link">Ascensores Bertako Igogaluk S.L.</a> | Baskenland, Spanien
+                        </span>
+                        <p>Installation, Instandhaltung und umfassende Modernisierung von Aufzügen.</p>
+                        <ul>
+                            <li>Instandhaltung und Modernisierung von Aufzügen mit 24/7 Bereitschaftsdienst (Okt 2022 - Dez 2022).</li>
+                            <li>Installation, Instandhaltung und Modernisierung von mehr als 120 Aufzügen (Dez 2019 - Sep 2022).</li>
+                            <li>Verwendung von Diagnosesoftware (Orona, Schindler) und IPAF-Zertifizierung für Arbeiten in der Höhe.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Robotics experience -->
+                <div class="timeline-item fade-in-up delay-3">
+                    <div class="timeline-date">Sep 2019 - Dez 2019</div>
+                    <div class="timeline-content">
+                        <h3>Roboter- und Automatisierungsbediener</h3>
+                        <span class="company">Eroski S.Coop. | Verteilzentrum, Baskenland</span>
+                        <p>Betrieb, Instandhaltung und Optimierung einer Roboterzelle mit KUKA KR 1000 Titan Roboter.</p>
+                        <ul>
+                            <li><strong>Schlüsselerfolg:</strong> Reduzierung der Palettierzykluszeit von 90 auf 68 Sekunden.</li>
+                            <li>Implementierung eines Frühwarnsystems für Verschleiß über Siemens S7-1200 SPS und Sensoren.</li>
+                            <li>24/7 Systemüberwachung und First-Level-Fehlersuche.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- EXPERIENCE SECTION DUTCH -->
-        <section class="experience section" id="experience-nl">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Werkervaring</h2>
-                </div>
-                
-                <div class="experience-timeline">
-                    <!-- Current experience through Fareon -->
-                    <div class="timeline-item fade-in-up">
-                        <div class="timeline-date">Apr 2025 - Heden</div>
-                        <div class="timeline-content">
-                            <h3>Industrieel Project Elektricien</h3>
-                            <span class="company">Fareon Nederland B.V. (Uitzendbureau) | Nederland</span>
-                            <p>Toegewezen aan diverse industriële projecten via een uitzendbureau, gespecialiseerd in elektrische installaties, besturingssystemen en automatisering voor toonaangevende technologiebedrijven.</p>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Jan 2026 - Heden</div>
-                                <h4>Ara Industries B.V. <a href="http://www.ara-industries.nl/" target="_blank" class="company-link">(Website)</a></h4>
-                                <ul>
-                                    <li>Ontwikkeling en integratie van bedieningspanelen en elektrische systemen voor "Slimme Tractors"</li>
-                                    <li>Implementatie van HMI-interfaces en telemetriesystemen</li>
-                                    <li>Specialisatie in embedded elektronica en connectiviteit voor landbouwmachines van de volgende generatie</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Nov 2025 - Dec 2025</div>
-                                <h4>Sanovo Technology B.V. <a href="https://www.sanovogroup.com/" target="_blank" class="company-link">(Website)</a></h4>
-                                <ul>
-                                    <li>Installatie van besturingssystemen (PLC) en elektrische panelen voor nieuwe volledig geautomatiseerde verwerkingslijnen</li>
-                                    <li>Zorgen voor continuïteit in hoogproductieboerderijen</li>
-                                    <li>Uitvoering van hoogspannings (440V/380V) elektrische installaties in overeenstemming met Europese industriële en voedselveiligheidsvoorschriften</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Mei 2025 - Okt 2025</div>
-                                <h4>Ara Industries B.V. <a href="http://www.ara-industries.nl/" target="_blank" class="company-link">(Website)</a></h4>
-                                <ul>
-                                    <li>Ontwikkeling en integratie van bedieningspanelen en elektrische systemen voor "Slimme Tractors"</li>
-                                    <li>Implementatie van HMI-interfaces en telemetriesystemen</li>
-                                    <li>Specialisatie in embedded elektronica en connectiviteit voor landbouwmachines</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Apr 2025 - Mei 2025</div>
-                                <h4>Teijin Aramid B.V. <a href="http://www.teijinaramid.com/" target="_blank" class="company-link">(Website)</a></h4>
-                                <ul>
-                                    <li>Gecertificeerde "explosion proof" elektrische installaties in ATEX-zones (Zone 1/Zone 2) voor chemische industrie</li>
-                                    <li>Praktische toepassing van VCA, ATEX en NEN-3140 veiligheidsvoorschriften in hoog-risico omgevingen</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Spain experience -->
-                    <div class="timeline-item fade-in-up delay-1">
-                        <div class="timeline-date">Mrt 2025 - Apr 2025</div>
-                        <div class="timeline-content">
-                            <h3>Liftinstallatietechnicus</h3>
-                            <span class="company">Montajes Luco SL (Aannemer voor Orona) | Barcelona, Spanje</span>
-                            <p>Volledige montage, uitlijning en ingebruikname van nieuwe liften met Orona ICON-controllers.</p>
-                            <ul>
-                                <li>Configuratie van controllers en veiligheidstesten volgens EN 81-20 norm</li>
-                                <li>Precieze uitlijning met toleranties kleiner dan 2mm</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- Maintenance experience Spain -->
-                    <div class="timeline-item fade-in-up delay-2">
-                        <div class="timeline-date">Sep 2024</div>
-                        <div class="timeline-content">
-                            <h3>Industrieel Onderhoudsingenieur</h3>
-                            <span class="company">Azkarrena Garbiketak, S.L. <a href="http://www.lavanderiadetiqueta.net/" target="_blank" class="company-link">(Website)</a> | Urnieta, Baskenland</span>
-                            <p>Correctief onderhoud van hoogwaardige industriële wasserij voor luxe hotels.</p>
-                            <ul>
-                                <li>Diagnose en reparatie van complexe systemen: frequentieregelaars, pompen, stoomsystemen en automatische chemicaliëndoseringen</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item fade-in-up delay-3">
-                        <div class="timeline-date">Feb 2023 - Dec 2023</div>
-                        <div class="timeline-content">
-                            <h3>Onderhoudsingenieur</h3>
-                            <span class="company">Viguam, S.L.L. | Vitoria-Gasteiz, Spanje</span>
-                            <p>Uitgebreid onderhoudsbeheer voor een portfolio van ~150 liften.</p>
-                            <ul>
-                                <li><strong>Belangrijke prestaties:</strong> 40% reductie in repetitieve incidenten</li>
-                                <li>Verbetering van klanttevredenheid van 72% naar 89%</li>
-                                <li>18% daling van onderhoudskosten per eenheid</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- Elevator Technician consolidated experience -->
-                    <div class="timeline-item fade-in-up">
-                        <div class="timeline-date">Dec 2019 - Dec 2022</div>
-                        <div class="timeline-content">
-                            <h3>Lifttechnicus (Gevormde Ervaring)</h3>
-                            <span class="company">
-                                <a href="http://www.inalsazener.com/" target="_blank" class="company-link">Industrial de Elevación S.A.</a> & 
-                                <a href="https://www.bertako.eus/" target="_blank" class="company-link">Ascensores Bertako Igogaluk S.L.</a> | Baskenland, Spanje
-                            </span>
-                            <p>Installatie, onderhoud en uitgebreide modernisering van liften.</p>
-                            <ul>
-                                <li>Onderhoud en modernisering van liften met 24/7 bereikbaarheid (Okt 2022 - Dec 2022)</li>
-                                <li>Installatie, onderhoud en modernisering van meer dan 120 liften (Dec 2019 - Sep 2022)</li>
-                                <li>Gebruik van diagnostische software (Orona, Schindler) en IPAF-certificering voor werken op hoogte</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- Robotics experience -->
-                    <div class="timeline-item fade-in-up delay-1">
-                        <div class="timeline-date">Sep 2019 - Dec 2019</div>
-                        <div class="timeline-content">
-                            <h3>Robotica en Automatisering Operator</h3>
-                            <span class="company">Eroski S.Coop. | Distributiecentrum, Baskenland</span>
-                            <p>Bediening, onderhoud en optimalisatie van robotcel met KUKA KR 1000 Titan robot.</p>
-                            <ul>
-                                <li><strong>Belangrijke prestatie:</strong> Vermindering van palletiseercyclus van 90 naar 68 seconden</li>
-                                <li>Implementatie van vroegtijdig waarschuwingssysteem voor slijtage via Siemens S7-1200 PLC en sensoren</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- Hotel maintenance experience -->
-                    <div class="timeline-item fade-in-up delay-2">
-                        <div class="timeline-date">2018 - 2019</div>
-                        <div class="timeline-content">
-                            <h3>Hotelonderhoud & Technische Diensten</h3>
-                            <span class="company">Diverse bedrijven | Spanje</span>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Aug 2019</div>
-                                <h4>Soft Evolution SL | Hotel Valle de Liendo, Cantabrië</h4>
-                                <ul>
-                                    <li>Uitgebreid onderhoud van 4-sterren hotelsystemen</li>
-                                    <li>Toegangscontrole (120 kamers), CCTV (32 IP-camera's), HVAC, wasserij en hoofd elektrisch paneel (400A)</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Okt 2018 - Nov 2018</div>
-                                <h4>Domonorte Tecnologia S.L. | Vizcaya</h4>
-                                <ul>
-                                    <li>Turnkey-projecten: elektrische installaties in industriële magazijnen</li>
-                                    <li>IP-bewakingssystemen, gestructureerde datanetwerken (Cat 6A) en basis domotica</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Jun 2018 - Jul 2018</div>
-                                <h4>Electricidad y Electrónica EDI S | Hotel in Bilbao</h4>
-                                <ul>
-                                    <li>Complete elektrische renovatie van een 3-sterren hotel</li>
-                                    <li>Nieuwe distributie, verlichting, individuele klimaatregeling, telecommunicatie en finale certificering</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Venezuela experience -->
-                    <div class="timeline-item fade-in-up delay-3">
-                        <div class="timeline-date">2011 - 2017</div>
-                        <div class="timeline-content">
-                            <h3>Ervaring in Venezuela</h3>
-                            <span class="company">
-                                <a href="http://www.pdvsa.com/?lang=en" target="_blank" class="company-link">PDVSA</a> | Diverse bedrijven | Venezuela
-                            </span>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Sep 2016 - Aug 2017</div>
-                                <h4>Onderhoudsingenieur | UR Ingeniería C.A., Caracas</h4>
-                                <ul>
-                                    <li>Onderhoud en reparatie van residentiële, commerciële en industriële liften</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Mrt 2012 - Jul 2016</div>
-                                <h4>Zelfstandig Industrieel Ingenieur</h4>
-                                <ul>
-                                    <li>Ontwerp, implementatie en ingebruikname van geautomatiseerde productiesystemen</li>
-                                    <li>Ontwerp van elektrische en bedieningspanelen</li>
-                                    <li>Projectplanning en -management met AutoCAD en Primavera P6</li>
-                                    <li>Leiderschap van multidisciplinaire teams voor industriële procesautomatisering</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Sep 2011 - Feb 2012</div>
-                                <h4>Planning Ingenieur/Project Ingenieur | Industrial Service de Venezuela C.A., Punto Fijo</h4>
-                                <ul>
-                                    <li>Planning, coördinatie en controle van civiele bouwprojecten</li>
-                                    <li>Beheer van deadlines, kosten en middelen met MS Project en Primavera P6</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Mrt 2011 - Sep 2011</div>
-                                <h4>Kwaliteitsingenieur (QA) | PDVSA, Paraguaná Raffinaderijcentrum</h4>
-                                <ul>
-                                    <li>Kwaliteitsaudits en -borging onder ISO 9001 en ISO 14000 normen</li>
-                                    <li>Risicobeheer en verbetering van productieprocessen</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- KEY PROJECTS SECTION -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Schlüsselprojekte & Erfolge</h2>
             </div>
-        </section>
-
-        <!-- SKILLS SECTION DUTCH -->
-        <section class="skills section" id="skills-nl">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Technische Vaardigheden</h2>
-                </div>
-                
-                <div class="skills-container">
-                    <div class="skill-category fade-in-up">
-                        <h3><i class="fas fa-robot"></i> Automatisering en Besturing</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">PLC Programmering (Siemens, Orona, Schindler)</span>
-                            <span class="skill-tag">Aandrijvingsparametrisering</span>
-                            <span class="skill-tag">Industriële robotica (KUKA)</span>
-                            <span class="skill-tag">Besturingssystemen</span>
-                            <span class="skill-tag">HMI-interfaces</span>
+            
+            <div class="project-grid">
+                <div class="project-card fade-in-up">
+                    <div class="project-content">
+                        <h3 class="project-title">Elektrische Integration intelligenter Landmaschinen</h3>
+                        <span class="project-company">Ara Industries B.V. | Spezialist für elektrische Systeme</span>
+                        <p>Leitung der Montage und Integration komplexer Steuerungsschränke, HMI-Schnittstellen und Telemetriesysteme für fortschrittliche "Smart Tractor"-Kabinen über mehrere Projektphasen hinweg.</p>
+                        <div class="project-achievement">
+                            <strong>Ergebnis:</strong> Erzielte eine <strong>150% Steigerung</strong> der monatlichen Produktionsleistung durch Arbeitsablaufoptimierung und Prozessredesign.
+                        </div>
+                        <div class="skill-list" style="margin-top: 15px;">
+                            <span class="skill-tag">Steuerungsschränke</span>
+                            <span class="skill-tag">HMI</span>
                             <span class="skill-tag">Telemetrie</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category fade-in-up delay-1">
-                        <h3><i class="fas fa-bolt"></i> Elektrische Installaties</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Hoog/Laagspanning</span>
-                            <span class="skill-tag">ATEX (Explosieve zones)</span>
-                            <span class="skill-tag">VCA, NEN-3140 voorschriften</span>
-                            <span class="skill-tag">"Explosion proof" installaties</span>
-                            <span class="skill-tag">Bedieningspanelen</span>
-                            <span class="skill-tag">Elektrische certificeringen</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category fade-in-up delay-2">
-                        <h3><i class="fas fa-cogs"></i> Industrieel Onderhoud</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Predictief onderhoud</span>
-                            <span class="skill-tag">Preventief onderhoud</span>
-                            <span class="skill-tag">Correctief onderhoud</span>
-                            <span class="skill-tag">Asset management</span>
-                            <span class="skill-tag">Storingdiagnose</span>
-                            <span class="skill-tag">Procesoptimalisatie</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category fade-in-up delay-3">
-                        <h3><i class="fas fa-tools"></i> Liften en Hijsen</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Liftinstallatie</span>
-                            <span class="skill-tag">Uitgebreid onderhoud</span>
-                            <span class="skill-tag">Modernisering</span>
-                            <span class="skill-tag">EN 81-20 voorschrift</span>
-                            <span class="skill-tag">TTAE certificering</span>
-                            <span class="skill-tag">IPAF (werken op hoogte)</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category fade-in-up">
-                        <h3><i class="fas fa-laptop-code"></i> Software en Ontwerp</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Geavanceerd AutoCAD 2D/3D</span>
-                            <span class="skill-tag">MS Project</span>
-                            <span class="skill-tag">Primavera P6</span>
-                            <span class="skill-tag">Technisch ontwerp</span>
-                            <span class="skill-tag">Projectmanagement</span>
-                            <span class="skill-tag">ISO 9001/14000</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category fade-in-up delay-1">
-                        <h3><i class="fas fa-language"></i> Talen</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Spaans (Moedertaal)</span>
-                            <span class="skill-tag">Engels (B2)</span>
-                            <span class="skill-tag">Duits (Basis)</span>
-                            <span class="skill-tag">Technische communicatie</span>
-                            <span class="skill-tag">Meertalige documentatie</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CERTIFICATIONS SECTION DUTCH -->
-        <section class="certifications section" id="certifications-nl">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Officiële Certificeringen</h2>
-                </div>
-                
-                <div class="certifications-grid">
-                    <div class="cert-card fade-in-up">
-                        <h4>Laagspanningsinstallateur (CCBT)</h4>
-                        <p>Officiële certificering voor laagspanningsinstallaties.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up delay-1">
-                        <h4>Thermisch Installateur-Onderhouder (IMT)</h4>
-                        <p>Kwalificatie voor thermische installaties in gebouwen.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up delay-2">
-                        <h4>Gasinstallateur Categorie IG-A</h4>
-                        <p>Certificering voor categorie A gasinstallaties.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up delay-3">
-                        <h4>Gecertificeerd Lifttechnicus (TTAE)</h4>
-                        <p>Officiële certificering voor liftinstallatie en onderhoud.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up">
-                        <h4>Koelsystemen Handler (GF1)</h4>
-                        <p>Certificering voor het hanteren van koelsystemen.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up delay-1">
-                        <h4>Koelinstallateur-Onderhouder (IF1)</h4>
-                        <p>Kwalificatie voor koelinstallaties.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up delay-2">
-                        <h4>Loodgieter Installateur (IA)</h4>
-                        <p>Certificering voor loodgietersinstallaties.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up delay-3">
-                        <h4>Petroleumproducten (ICL2, RCL3)</h4>
-                        <p>Certificering voor installatie en reparatie van petroleumproducten.</p>
-                    </div>
-                </div>
-                
-                <div style="text-align: center; margin-top: 40px;">
-                    <p><strong>Professionele affiliaties:</strong> Officiële College van Industrieel Technisch Ingenieurs van Álava (Spanje) | College van Ingenieurs van Venezuela</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- EDUCATION SECTION DUTCH -->
-        <section class="education section" id="education-nl">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Academische Opleiding</h2>
-                </div>
-                
-                <div class="education-container">
-                    <div class="education-card fade-in-up">
-                        <div class="education-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="education-content">
-                            <h3>Masterdiploma Industrieel Ingenieur</h3>
-                            <span class="institution">UNED (Nationale Universiteit voor Afstandsonderwijs)</span>
-                            <span class="period">2024 - Heden (in uitvoering)</span>
-                            <p>Specialiteit in Elektronische en Automatische Engineering. Officiële graad die kwalificeert voor de uitoefening van Industrieel Ingenieur volgens Order CIN/311/2009.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="education-card fade-in-up delay-1">
-                        <div class="education-icon">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <div class="education-content">
-                            <h3>Industrieel Ingenieur</h3>
-                            <span class="institution">Universidad Nacional Experimental Francisco de Miranda (Venezuela)</span>
-                            <span class="period">Gehomologeerd in Spanje</span>
-                            <p>Universitair diploma gehomologeerd in Spanje als equivalent aan Technisch Industrieel Ingenieur met specialisatie in Mechanica.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="education-card fade-in-up delay-2">
-                        <div class="education-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <div class="education-content">
-                            <h3>Voortgezette Opleiding en Specialisaties</h3>
-                            <span class="institution">Diverse instellingen en certificeringen</span>
-                            <span class="period">2011 - Heden</span>
-                            <p><strong>Specialisatiegebieden:</strong> Industriële Automatisering en Besturing, Liftinstallatie en Onderhoud, Energie-efficiëntie en Hernieuwbare Energie, Technisch Ontwerp en Projectmanagement.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- DOWNLOAD SECTION DUTCH -->
-        <section class="download-section section">
-            <div class="container">
-                <div class="section-title">
-                    <h2>CV Downloaden</h2>
-                </div>
-                <p>Download mijn complete CV in verschillende formaten</p>
-                <div class="download-buttons">
-                    <button class="btn btn-primary" id="downloadHtmlNl">HTML CV Downloaden</button>
-                    <button class="btn btn-pdf" id="downloadPdfNl2">PDF CV Downloaden</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION DUTCH -->
-        <section class="contact section" id="contact-nl">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Contact</h2>
-                </div>
-                
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <div class="contact-card fade-in-up">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>E-mail</h4>
-                                <p>urieperoz@gmail.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-card fade-in-up delay-1">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Telefoon</h4>
-                                <p>+34 688 778 755</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-card fade-in-up delay-2">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Locatie</h4>
-                                <p>Vitoria-Gasteiz, Álava, Spanje</p>
-                                <p><small>Beschikbaar voor nationale en internationale mobiliteit</small></p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-card fade-in-up delay-3">
-                            <div class="contact-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>LinkedIn</h4>
-                                <p>linkedin.com/in/ramón-uriepero-8449307b</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-form fade-in-up">
-                        <h3>Stuur mij een bericht</h3>
-                        <form id="contactFormNl">
-                            <div class="form-group">
-                                <label for="name-nl">Naam</label>
-                                <input type="text" id="name-nl" name="name" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email-nl">E-mail</label>
-                                <input type="email" id="email-nl" name="email" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="subject-nl">Onderwerp</label>
-                                <input type="text" id="subject-nl" name="subject" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message-nl">Bericht</label>
-                                <textarea id="message-nl" name="message" rows="5" required></textarea>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary">Bericht verzenden</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- GERMAN CONTENT -->
-    <main class="lang-content" id="content-de" style="display: none;">
-        <!-- HERO SECTION GERMAN -->
-        <section class="hero" id="home-de">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text fade-in-up">
-                        <h1>Uriepero Ramón<br><span class="highlight">Industrieingenieur</span></h1>
-                        <p>Spezialist für Industrieautomatisierung, Energieeffizienz und technisches Projektmanagement. Über 20 Jahre Erfahrung in Industrieanlagen, Aufzügen und Robotik mit internationalen offiziellen Zertifizierungen.</p>
-                        <div class="hero-buttons">
-                            <a href="#contact-de" class="btn btn-primary">Jetzt kontaktieren</a>
-                            <a href="#about-de" class="btn btn-secondary">Profil anzeigen</a>
-                            <button class="btn btn-pdf" id="downloadPdfDe">PDF-Lebenslauf herunterladen</button>
-                        </div>
-                    </div>
-                    <div class="hero-image fade-in-up delay-1">
-                        <div class="profile-image-container">
-                            <img src="https://i.ibb.co/KpQ9P9Ht/Perfil.jpg" alt="Uriepero Ramón - Industrieingenieur">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ABOUT SECTION GERMAN -->
-        <section class="about section" id="about-de">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Über mich</h2>
-                </div>
-                
-                <div class="about-content">
-                    <div class="about-image fade-in-up">
-                        <div class="profile-image-container">
-                            <img src="https://i.ibb.co/KpQ9P9Ht/Perfil.jpg" alt="Uriepero Ramón - Professionelles Profil">
-                        </div>
-                    </div>
-                    <div class="about-text fade-in-up delay-1">
-                        <h2>Industrieingenieur <span class="highlight">Spezialisiert</span></h2>
-                        <p>In Spanien zertifizierter Industrieingenieur mit Spezialisierung auf <strong>Industrieautomatisierung, Energieeffizienz und technisches Projektmanagement</strong>. Meine Erfahrung umfasst Installation, Wartung und Modernisierung von Industriesystemen, Aufzügen und Robotik.</p>
-                        <p>Zertifiziert in mehreren offiziellen Qualifikationen (Niederspannung, thermisch, Gas, Kühlung, Aufzüge). Ergebnisorientiert, mit Fähigkeit, umfassende Projekte zu leiten und Prozesse in Industrie- und Gebäudeumgebungen zu optimieren.</p>
-                        <p>Derzeit arbeite ich an internationalen Projekten in den Niederlanden über eine Zeitarbeitsfirma (Uitzendbureau) und wende europäische Industrie- und Lebensmittelsicherheitsvorschriften in Hochspannungsinstallationen und PLC-Steuerungssystemen an.</p>
-                        
-                        <div class="stats">
-                            <div class="stat-item">
-                                <span class="stat-number">20+</span>
-                                <span class="stat-text">Jahre Erfahrung</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">150+</span>
-                                <span class="stat-text">Projekte</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">12</span>
-                                <span class="stat-text">Zertifizierungen</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">3</span>
-                                <span class="stat-text">Sprachen</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- EXPERIENCE SECTION GERMAN -->
-        <section class="experience section" id="experience-de">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Berufserfahrung</h2>
-                </div>
-                
-                <div class="experience-timeline">
-                    <!-- Current experience through Fareon -->
-                    <div class="timeline-item fade-in-up">
-                        <div class="timeline-date">Apr 2025 - Heute</div>
-                        <div class="timeline-content">
-                            <h3>Industrieller Projektelektriker</h3>
-                            <span class="company">Fareon Nederland B.V. (Zeitarbeitsfirma/Uitzendbureau) | Niederlande</span>
-                            <p>Zugewiesen an verschiedene Industrieprojekte über eine Zeitarbeitsfirma, spezialisiert auf elektrische Installationen, Steuerungssysteme und Automatisierung für führende Technologieunternehmen.</p>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Jan 2026 - Heute</div>
-                                <h4>Ara Industries B.V. <a href="http://www.ara-industries.nl/" target="_blank" class="company-link">(Website)</a></h4>
-                                <ul>
-                                    <li>Entwicklung und Integration von Steuerungspaneelen und elektrischen Systemen für "Smart Tractors"</li>
-                                    <li>Implementierung von HMI-Schnittstellen und Telemetriesystemen</li>
-                                    <li>Spezialisierung auf Embedded-Elektronik und Konnektivität für Landmaschinen der nächsten Generation</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Nov 2025 - Dez 2025</div>
-                                <h4>Sanovo Technology B.V. <a href="https://www.sanovogroup.com/" target="_blank" class="company-link">(Website)</a></h4>
-                                <ul>
-                                    <li>Installation von Steuerungssystemen (PLC) und Elektropaneelen für neue vollautomatisierte Verarbeitungslinien</li>
-                                    <li>Sicherstellung der Kontinuität in Hochproduktionsbetrieben</li>
-                                    <li>Ausführung von Hochspannungs (440V/380V) Elektroinstallationen unter Einhaltung europäischer Industrie- und Lebensmittelsicherheitsvorschriften</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Mai 2025 - Okt 2025</div>
-                                <h4>Ara Industries B.V. <a href="http://www.ara-industries.nl/" target="_blank" class="company-link">(Website)</a></h4>
-                                <ul>
-                                    <li>Entwicklung und Integration von Steuerungspaneelen und elektrischen Systemen für "Smart Tractors"</li>
-                                    <li>Implementierung von HMI-Schnittstellen und Telemetriesystemen</li>
-                                    <li>Spezialisierung auf Embedded-Elektronik und Konnektivität für Landmaschinen</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Apr 2025 - Mai 2025</div>
-                                <h4>Teijin Aramid B.V. <a href="http://www.teijinaramid.com/" target="_blank" class="company-link">(Website)</a></h4>
-                                <ul>
-                                    <li>Zertifizierte "explosion proof" Elektroinstallationen in ATEX-Zonen (Zone 1/Zone 2) für chemische Industrie</li>
-                                    <li>Praktische Anwendung von VCA, ATEX und NEN-3140 Sicherheitsvorschriften in Hochrisikoumgebungen</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Spain experience -->
-                    <div class="timeline-item fade-in-up delay-1">
-                        <div class="timeline-date">Mär 2025 - Apr 2025</div>
-                        <div class="timeline-content">
-                            <h3>Aufzugsinstallateur</h3>
-                            <span class="company">Montajes Luco SL (Auftragnehmer für Orona) | Barcelona, Spanien</span>
-                            <p>Vollständige Montage, Ausrichtung und Inbetriebnahme neuer Aufzüge mit Orona ICON-Controllern.</p>
-                            <ul>
-                                <li>Konfiguration von Controllern und Sicherheitstests nach EN 81-20 Norm</li>
-                                <li>Präzise Ausrichtung mit Toleranzen kleiner als 2mm</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- Maintenance experience Spain -->
-                    <div class="timeline-item fade-in-up delay-2">
-                        <div class="timeline-date">Sep 2024</div>
-                        <div class="timeline-content">
-                            <h3>Industrieller Instandhaltungsingenieur</h3>
-                            <span class="company">Azkarrena Garbiketak, S.L. <a href="http://www.lavanderiadetiqueta.net/" target="_blank" class="company-link">(Website)</a> | Urnieta, Baskenland</span>
-                            <p>Korrektive Instandhaltung von Hochleistungs-Industriewäschereien für Luxushotels.</p>
-                            <ul>
-                                <li>Diagnose und Reparatur komplexer Systeme: Frequenzumrichter, Pumpen, Dampfsysteme und automatische Chemikalien-Dosierer</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item fade-in-up delay-3">
-                        <div class="timeline-date">Feb 2023 - Dez 2023</div>
-                        <div class="timeline-content">
-                            <h3>Instandhaltungsingenieur</h3>
-                            <span class="company">Viguam, S.L.L. | Vitoria-Gasteiz, Spanien</span>
-                            <p>Umfassendes Instandhaltungsmanagement für ein Portfolio von ~150 Aufzügen.</p>
-                            <ul>
-                                <li><strong>Wichtige Erfolge:</strong> 40% Reduzierung wiederkehrender Vorfälle</li>
-                                <li>Verbesserung der Kundenzufriedenheit von 72% auf 89%</li>
-                                <li>18% Senkung der Instandhaltungskosten pro Einheit</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- Elevator Technician consolidated experience -->
-                    <div class="timeline-item fade-in-up">
-                        <div class="timeline-date">Dez 2019 - Dez 2022</div>
-                        <div class="timeline-content">
-                            <h3>Aufzugstechniker (Konsolidierte Erfahrung)</h3>
-                            <span class="company">
-                                <a href="http://www.inalsazener.com/" target="_blank" class="company-link">Industrial de Elevación S.A.</a> & 
-                                <a href="https://www.bertako.eus/" target="_blank" class="company-link">Ascensores Bertako Igogaluk S.L.</a> | Baskenland, Spanien
-                            </span>
-                            <p>Installation, Wartung und umfassende Modernisierung von Aufzügen.</p>
-                            <ul>
-                                <li>Wartung und Modernisierung von Aufzügen mit 24/7 Rufbereitschaft (Okt 2022 - Dez 2022)</li>
-                                <li>Installation, Wartung und Modernisierung von mehr als 120 Aufzügen (Dez 2019 - Sep 2022)</li>
-                                <li>Verwendung von Diagnosesoftware (Orona, Schindler) und IPAF-Zertifizierung für Arbeiten in der Höhe</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- Robotics experience -->
-                    <div class="timeline-item fade-in-up delay-1">
-                        <div class="timeline-date">Sep 2019 - Dez 2019</div>
-                        <div class="timeline-content">
-                            <h3>Robotik und Automatisierungsoperator</h3>
-                            <span class="company">Eroski S.Coop. | Vertriebszentrum, Baskenland</span>
-                            <p>Betrieb, Wartung und Optimierung von Roboterzellen mit KUKA KR 1000 Titan Roboter.</p>
-                            <ul>
-                                <li><strong>Wichtiger Erfolg:</strong> Reduzierung der Palettierzykluszeit von 90 auf 68 Sekunden</li>
-                                <li>Implementierung eines Frühwarnsystems für Verschleiß durch Siemens S7-1200 PLC und Sensoren</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- Hotel maintenance experience -->
-                    <div class="timeline-item fade-in-up delay-2">
-                        <div class="timeline-date">2018 - 2019</div>
-                        <div class="timeline-content">
-                            <h3>Hotelwartung & Technische Dienste</h3>
-                            <span class="company">Verschiedene Unternehmen | Spanien</span>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Aug 2019</div>
-                                <h4>Soft Evolution SL | Hotel Valle de Liendo, Kantabrien</h4>
-                                <ul>
-                                    <li>Umfassende Wartung von 4-Sterne-Hotelsystemen</li>
-                                    <li>Zugangskontrolle (120 Zimmer), CCTV (32 IP-Kameras), HLK, Wäscherei und Hauptstromtafel (400A)</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Okt 2018 - Nov 2018</div>
-                                <h4>Domonorte Tecnologia S.L. | Vizcaya</h4>
-                                <ul>
-                                    <li>Schlüsselfertige Projekte: elektrische Installationen in Industriehallen</li>
-                                    <li>IP-Überwachungssysteme, strukturierte Datennetzwerke (Cat 6A) und Basis-Hausautomation</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Jun 2018 - Jul 2018</div>
-                                <h4>Electricidad y Electrónica EDI S | Hotel in Bilbao</h4>
-                                <ul>
-                                    <li>Komplette elektrische Renovierung eines 3-Sterne-Hotels</li>
-                                    <li>Neue Verteilung, Beleuchtung, individuelle Klimaregelung, Telekommunikation und Endzertifizierung</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Venezuela experience -->
-                    <div class="timeline-item fade-in-up delay-3">
-                        <div class="timeline-date">2011 - 2017</div>
-                        <div class="timeline-content">
-                            <h3>Erfahrung in Venezuela</h3>
-                            <span class="company">
-                                <a href="http://www.pdvsa.com/?lang=en" target="_blank" class="company-link">PDVSA</a> | Verschiedene Unternehmen | Venezuela
-                            </span>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Sep 2016 - Aug 2017</div>
-                                <h4>Instandhaltungsingenieur | UR Ingeniería C.A., Caracas</h4>
-                                <ul>
-                                    <li>Wartung und Reparatur von Wohn-, Gewerbe- und Industrieaufzügen</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Mär 2012 - Jul 2016</div>
-                                <h4>Freiberuflicher Industrieingenieur</h4>
-                                <ul>
-                                    <li>Entwurf, Implementierung und Inbetriebnahme automatisierter Produktionssysteme</li>
-                                    <li>Entwurf von elektrischen und Steuerungspaneelen</li>
-                                    <li>Projektplanung und -management mit AutoCAD und Primavera P6</li>
-                                    <li>Führung multidisziplinärer Teams für industrielle Prozessautomatisierung</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Sep 2011 - Feb 2012</div>
-                                <h4>Planungsingenieur/Projektingenieur | Industrial Service de Venezuela C.A., Punto Fijo</h4>
-                                <ul>
-                                    <li>Planung, Koordination und Kontrolle von Tiefbauprojekten</li>
-                                    <li>Management von Fristen, Kosten und Ressourcen mit MS Project und Primavera P6</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="assignment-item">
-                                <div class="assignment-date">Mär 2011 - Sep 2011</div>
-                                <h4>Qualitätsingenieur (QA) | PDVSA, Paraguaná Raffineriezentrum</h4>
-                                <ul>
-                                    <li>Qualitätsaudits und -sicherung nach ISO 9001 und ISO 14000 Normen</li>
-                                    <li>Risikomanagement und Verbesserung von Produktionsprozessen</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SKILLS SECTION GERMAN -->
-        <section class="skills section" id="skills-de">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Technische Fähigkeiten</h2>
-                </div>
-                
-                <div class="skills-container">
-                    <div class="skill-category fade-in-up">
-                        <h3><i class="fas fa-robot"></i> Automatisierung und Steuerung</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">PLC-Programmierung (Siemens, Orona, Schindler)</span>
-                            <span class="skill-tag">Antriebsparametrierung</span>
-                            <span class="skill-tag">Industrierobotik (KUKA)</span>
-                            <span class="skill-tag">Steuerungssysteme</span>
-                            <span class="skill-tag">HMI-Schnittstellen</span>
-                            <span class="skill-tag">Telemetrie</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category fade-in-up delay-1">
-                        <h3><i class="fas fa-bolt"></i> Elektrische Installationen</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Hoch-/Niederspannung</span>
-                            <span class="skill-tag">ATEX (Explosionsgefährdete Bereiche)</span>
-                            <span class="skill-tag">VCA, NEN-3140 Vorschriften</span>
-                            <span class="skill-tag">"Explosion proof" Installationen</span>
-                            <span class="skill-tag">Steuerungspaneelen</span>
-                            <span class="skill-tag">Elektrische Zertifizierungen</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category fade-in-up delay-2">
-                        <h3><i class="fas fa-cogs"></i> Industrielle Instandhaltung</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Vorausschauende Instandhaltung</span>
-                            <span class="skill-tag">Präventive Instandhaltung</span>
-                            <span class="skill-tag">Korrektive Instandhaltung</span>
-                            <span class="skill-tag">Anlagenmanagement</span>
-                            <span class="skill-tag">Fehlerdiagnose</span>
                             <span class="skill-tag">Prozessoptimierung</span>
                         </div>
                     </div>
-                    
-                    <div class="skill-category fade-in-up delay-3">
-                        <h3><i class="fas fa-tools"></i> Aufzüge und Heben</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Aufzugsinstallation</span>
-                            <span class="skill-tag">Umfassende Instandhaltung</span>
-                            <span class="skill-tag">Modernisierung</span>
-                            <span class="skill-tag">EN 81-20 Vorschrift</span>
-                            <span class="skill-tag">TTAE Zertifizierung</span>
-                            <span class="skill-tag">IPAF (Höhenarbeit)</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category fade-in-up">
-                        <h3><i class="fas fa-laptop-code"></i> Software und Design</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Fortgeschrittenes AutoCAD 2D/3D</span>
-                            <span class="skill-tag">MS Project</span>
-                            <span class="skill-tag">Primavera P6</span>
-                            <span class="skill-tag">Technisches Design</span>
-                            <span class="skill-tag">Projektmanagement</span>
-                            <span class="skill-tag">ISO 9001/14000</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category fade-in-up delay-1">
-                        <h3><i class="fas fa-language"></i> Sprachen</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Spanisch (Muttersprache)</span>
-                            <span class="skill-tag">Englisch (B2)</span>
-                            <span class="skill-tag">Deutsch (Grundlagen)</span>
-                            <span class="skill-tag">Technische Kommunikation</span>
-                            <span class="skill-tag">Mehrsprachige Dokumentation</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CERTIFICATIONS SECTION GERMAN -->
-        <section class="certifications section" id="certifications-de">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Offizielle Zertifizierungen</h2>
                 </div>
                 
-                <div class="certifications-grid">
-                    <div class="cert-card fade-in-up">
-                        <h4>Niederspannungsinstallateur (CCBT)</h4>
-                        <p>Offizielle Zertifizierung für Niederspannungsinstallationen.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up delay-1">
-                        <h4>Thermischer Installateur-Instandhalter (IMT)</h4>
-                        <p>Qualifikation für thermische Installationen in Gebäuden.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up delay-2">
-                        <h4>Gasinstallateur Kategorie IG-A</h4>
-                        <p>Zertifizierung für Kategorie A Gasinstallationen.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up delay-3">
-                        <h4>Zertifizierter Aufzugstechniker (TTAE)</h4>
-                        <p>Offizielle Zertifizierung für Aufzugsinstallation und -instandhaltung.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up">
-                        <h4>Kältesysteme Handler (GF1)</h4>
-                        <p>Zertifizierung für den Umgang mit Kältesystemen.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up delay-1">
-                        <h4>Kälteinstallateur-Instandhalter (IF1)</h4>
-                        <p>Qualifikation für Kälteinstallationen.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up delay-2">
-                        <h4>Installateur für Sanitär (IA)</h4>
-                        <p>Zertifizierung für Sanitärinstallationen.</p>
-                    </div>
-                    
-                    <div class="cert-card fade-in-up delay-3">
-                        <h4>Erdölprodukte (ICL2, RCL3)</h4>
-                        <p>Zertifizierung für Installation und Reparatur von Erdölprodukten.</p>
+                <div class="project-card fade-in-up delay-1">
+                    <div class="project-content">
+                        <h3 class="project-title">ATEX-konforme Inbetriebnahme in Chemieanlage</h3>
+                        <span class="project-company">Teijin Aramid B.V. (NL) | Industrie-Elektriker</span>
+                        <p>Ausführung der Installation und Inbetriebnahme von Motoren und Messgeräten innerhalb der explosionsgefährdeten (ATEX) Zonen einer Raffinerie unter Einhaltung der höchsten Sicherheitsprotokolle.</p>
+                        <div class="project-achievement">
+                            <strong>Angewandte Standards:</strong> Praktische Anwendung wichtiger europäischer Sicherheitsvorschriften: <strong>VCA, ATEX und NEN-3140</strong> in einer Hochrisikoumgebung.
+                        </div>
+                        <div class="skill-list" style="margin-top: 15px;">
+                            <span class="skill-tag">ATEX</span>
+                            <span class="skill-tag">VCA Sicherheit</span>
+                            <span class="skill-tag">Gefährliche Bereiche</span>
+                            <span class="skill-tag">Inbetriebnahme</span>
+                        </div>
                     </div>
                 </div>
                 
-                <div style="text-align: center; margin-top: 40px;">
-                    <p><strong>Berufsverbände:</strong> Offizielles Kollegium der Industrieingenieure von Álava (Spanien) | Ingenieurkammer von Venezuela</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- EDUCATION SECTION GERMAN -->
-        <section class="education section" id="education-de">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Akademische Ausbildung</h2>
+                <div class="project-card fade-in-up delay-2">
+                    <div class="project-content">
+                        <h3 class="project-title">Roboterzellen-Optimierung & Support</h3>
+                        <span class="project-company">Eroski Verteilzentrum (ES) | Automatisierungsspezialist</span>
+                        <p>Betrieb und Support eines kritischen 24/7 automatisierten Sortier- und Depalettiersystems mit KUKA-Robotern. Durchführung von First-Level-Fehlersuche und Prozessanalyse.</p>
+                        <div class="project-achievement">
+                            <strong>Erfolg:</strong> Durch proaktive Überwachung und Unterstützung <strong>erheblich reduzierte Systemausfälle</strong>, was einen konsistenten Betrieb mit voller Kapazität ermöglichte.
+                        </div>
+                        <div class="skill-list" style="margin-top: 15px;">
+                            <span class="skill-tag">KUKA Robotik</span>
+                            <span class="skill-tag">Automatisierung</span>
+                            <span class="skill-tag">Fehlersuche</span>
+                            <span class="skill-tag">Verfügbarkeitsoptimierung</span>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="education-container">
-                    <div class="education-card fade-in-up">
-                        <div class="education-icon">
-                            <i class="fas fa-graduation-cap"></i>
+                <div class="project-card fade-in-up delay-3">
+                    <div class="project-content">
+                        <h3 class="project-title">Aufzugsflottenmanagement & 24/7 Notfallbereitschaft</h3>
+                        <span class="project-company">Verschiedene Serviceunternehmen (ES) | Senior Techniker</span>
+                        <p>Management vorbeugender/korrekter Instandhaltung für Portfolios von bis zu 150 Aufzugseinheiten. Verantwortlich für Modernisierungsprojekte und Einhaltung behördlicher Vorschriften (EN 81-20).</p>
+                        <div class="project-achievement">
+                            <strong>Kritische Rolle:</strong> Teilnahme an einem <strong>24/7 Bereitschaftsdienst</strong> für Notfall-Passagierbergungen, Demonstration von Krisenmanagement und Sicherheitsengagement.
                         </div>
-                        <div class="education-content">
-                            <h3>Master-Abschluss in Industrieingenieurwesen</h3>
-                            <span class="institution">UNED (Nationale Universität für Fernunterricht)</span>
-                            <span class="period">2024 - Heute (in Bearbeitung)</span>
-                            <p>Spezialisierung auf Elektronische und Automatische Technik. Offizieller Abschluss, der zur Ausübung des Industrieingenieurs nach Order CIN/311/2009 qualifiziert.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="education-card fade-in-up delay-1">
-                        <div class="education-icon">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <div class="education-content">
-                            <h3>Industrieingenieur</h3>
-                            <span class="institution">Universidad Nacional Experimental Francisco de Miranda (Venezuela)</span>
-                            <span class="period">In Spanien homologiert</span>
-                            <p>Universitätsabschluss, der in Spanien als gleichwertig mit Technischem Industrieingenieur mit Spezialisierung auf Mechanik homologiert wurde.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="education-card fade-in-up delay-2">
-                        <div class="education-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <div class="education-content">
-                            <h3>Weiterbildung und Spezialisierungen</h3>
-                            <span class="institution">Verschiedene Institutionen und Zertifizierungen</span>
-                            <span class="period">2011 - Heute</span>
-                            <p><strong>Spezialisierungsbereiche:</strong> Industrieautomatisierung und -steuerung, Aufzugsinstallation und -instandhaltung, Energieeffizienz und erneuerbare Energien, Technisches Design und Projektmanagement.</p>
+                        <div class="skill-list" style="margin-top: 15px;">
+                            <span class="skill-tag">Vorbeugende Instandhaltung</span>
+                            <span class="skill-tag">Flottenmanagement</span>
+                            <span class="skill-tag">Notfallbereitschaft</span>
+                            <span class="skill-tag">EN 81-20</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- DOWNLOAD SECTION GERMAN -->
-        <section class="download-section section">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Lebenslauf herunterladen</h2>
-                </div>
-                <p>Laden Sie meinen vollständigen Lebenslauf in verschiedenen Formaten herunter</p>
-                <div class="download-buttons">
-                    <button class="btn btn-primary" id="downloadHtmlDe">HTML-Lebenslauf herunterladen</button>
-                    <button class="btn btn-pdf" id="downloadPdfDe2">PDF-Lebenslauf herunterladen</button>
-                </div>
+    <!-- SKILLS SECTION -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Kernkompetenzen & Technische Fähigkeiten</h2>
             </div>
-        </section>
-
-        <!-- CONTACT SECTION GERMAN -->
-        <section class="contact section" id="contact-de">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Kontakt</h2>
+            
+            <div class="skills-container">
+                <div class="skill-category fade-in-up">
+                    <h3><i class="fas fa-cogs"></i> Ingenieurwesen & Technischer Betrieb</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Industrielle Elektrosysteme</span>
+                        <span class="skill-tag">Automatisierung & SPS</span>
+                        <span class="skill-tag">Robotik (KUKA)</span>
+                        <span class="skill-tag">Pneumatische & Hydraulische Systeme</span>
+                        <span class="skill-tag">CAD (AutoCAD 2D/3D)</span>
+                        <span class="skill-tag">Vorbeugende & Korrektive Instandhaltung</span>
+                        <span class="skill-tag">HLK & Gebäudemanagement</span>
+                    </div>
                 </div>
                 
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <div class="contact-card fade-in-up">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>E-Mail</h4>
-                                <p>urieperoz@gmail.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-card fade-in-up delay-1">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Telefon</h4>
-                                <p>+34 688 778 755</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-card fade-in-up delay-2">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Standort</h4>
-                                <p>Vitoria-Gasteiz, Álava, Spanien</p>
-                                <p><small>Verfügbar für nationale und internationale Mobilität</small></p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-card fade-in-up delay-3">
-                            <div class="contact-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>LinkedIn</h4>
-                                <p>linkedin.com/in/ramón-uriepero-8449307b</p>
-                            </div>
-                        </div>
+                <div class="skill-category fade-in-up delay-1">
+                    <h3><i class="fas fa-tachometer-alt"></i> Prozess- & Qualitätsmanagement</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Prozessoptimierung</span>
+                        <span class="skill-tag">Lean-Methoden</span>
+                        <span class="skill-tag">Qualitätskontrollsysteme</span>
+                        <span class="skill-tag">Interne Auditierung (ISO 9001)</span>
+                        <span class="skill-tag">Projektplanung & -unterstützung</span>
+                        <span class="skill-tag">Technische Dokumentation</span>
                     </div>
-                    
-                    <div class="contact-form fade-in-up">
-                        <h3>Nachricht senden</h3>
-                        <form id="contactFormDe">
-                            <div class="form-group">
-                                <label for="name-de">Name</label>
-                                <input type="text" id="name-de" name="name" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email-de">E-Mail</label>
-                                <input type="email" id="email-de" name="email" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="subject-de">Betreff</label>
-                                <input type="text" id="subject-de" name="subject" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message-de">Nachricht</label>
-                                <textarea id="message-de" name="message" rows="5" required></textarea>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary">Nachricht senden</button>
-                        </form>
+                </div>
+                
+                <div class="skill-category fade-in-up delay-2">
+                    <h3><i class="fas fa-shield-alt"></i> Sicherheit & Compliance</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag highlight">VCA-Basissicherheit</span>
+                        <span class="skill-tag">ATEX-Richtlinien</span>
+                        <span class="skill-tag">EN / ISO Normen</span>
+                        <span class="skill-tag">Risikobewertung</span>
+                        <span class="skill-tag">Notfallverfahren</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category fade-in-up delay-3">
+                    <h3><i class="fas fa-hard-hat"></i> Aufzüge & Hebesysteme</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Aufzugsinstallation</span>
+                        <span class="skill-tag">Umfassende Instandhaltung</span>
+                        <span class="skill-tag">Modernisierung</span>
+                        <span class="skill-tag">EN 81-20 Vorschrift</span>
+                        <span class="skill-tag">TTAE-Zertifizierung</span>
+                        <span class="skill-tag">IPAF (Arbeiten in der Höhe)</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category fade-in-up">
+                    <h3><i class="fas fa-bolt"></i> Elektrotechnik & Automatisierung</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Hoch-/Niederspannung</span>
+                        <span class="skill-tag">SPS-Programmierung (Siemens, Orona, Schindler)</span>
+                        <span class="skill-tag">Ummrichter-Parametrierung (VFDs)</span>
+                        <span class="skill-tag">Steuerungssysteme</span>
+                        <span class="skill-tag">HMI-Schnittstellen</span>
+                        <span class="skill-tag">Telemetrie</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category fade-in-up delay-1">
+                    <h3><i class="fas fa-language"></i> Professionelles & Sprachen</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Spanisch (Muttersprache)</span>
+                        <span class="skill-tag highlight">Englisch (Verhandlungssicher)</span>
+                        <span class="skill-tag">Deutsch (Grundkenntnisse - Lernend)</span>
+                        <span class="skill-tag">Funktionsübergreifende Kommunikation</span>
+                        <span class="skill-tag">Mentoring & Wissenstransfer</span>
+                        <span class="skill-tag">Anpassungsfähigkeit</span>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section class="certifications-section section" id="certifications">
+        <div class="container">
+            <div class="section-title">
+                <h2>Kernzertifizierungen</h2>
+            </div>
+            
+            <div class="certifications-grid">
+                <div class="cert-card fade-in-up">
+                    <h4>VCA-Basis-Sicherheitszertifikat</h4>
+                    <p>VCA-Prüfungszentrum, Niederlande. Grundlegende Sicherheitsqualifikation für Personal in Hochrisiko-Industrieumgebungen. In ganz Europa weitgehend anerkannt.</p>
+                    <span class="cert-badge">Gültig bis: 04/2035</span>
+                </div>
+                
+                <div class="cert-card fade-in-up delay-1">
+                    <h4>Offizieller Aufzugs-Installations- & Instandhaltungstechniker</h4>
+                    <p>Spanisches SEPE-Zertifikat (IMAQ0110). Staatlich ausgestellte Berufsqualifikation zur Arbeit an Aufzügen und ortsfesten Hebezeugen.</p>
+                    <span class="cert-badge">Nationales Berufszertifikat</span>
+                </div>
+                
+                <div class="cert-card fade-in-up delay-2">
+                    <h4>Fortgeschrittenes 2D & 3D AutoCAD</h4>
+                    <p>In Katalonien akkreditierte Ausbildung. Fortgeschrittene Kenntnisse in der branchenüblichen Software für technisches Design und Ingenieurzeichnungen.</p>
+                    <span class="cert-badge">36 Stunden | 2025</span>
+                </div>
+                
+                <div class="cert-card fade-in-up delay-3">
+                    <h4>Photovoltaik-Systemdesign</h4>
+                    <p>SEPE-akkreditiert (ENAE003PO), Spanien. Zertifiziertes Wissen in Design, Dimensionierung und Wartung netzgekoppelter Solar-PV-Anlagen.</p>
+                    <span class="cert-badge">100 Stunden | 2024</span>
+                </div>
+                
+                <div class="cert-card fade-in-up">
+                    <h4>Interner Qualitätsauditor (QMS)</h4>
+                    <p>Schulung zur internen Auditierung von Qualitätsmanagementsystemen basierend auf ISO 9001-Standards. 64-Stunden-Programm.</p>
+                    <span class="cert-badge">64 Stunden | 2011</span>
+                </div>
+                
+                <div class="cert-card fade-in-up delay-1">
+                    <h4>Grundlagen der Industrierobotik</h4>
+                    <p>Akkreditierter Kurs zu Roboter-Morphologie, Kinematik, Programmierung und industriellen Anwendungskriterien.</p>
+                    <span class="cert-badge">50 Stunden | 2021</span>
+                </div>
+                
+                <div class="cert-card fade-in-up delay-2">
+                    <h4>Frequenzumrichter (VFDs)</h4>
+                    <p>Spezialisierte Schulung in Konfiguration, Programmierung und Wartung von industriellen Motorantrieben (IMAQ006PO).</p>
+                    <span class="cert-badge">20 Stunden | 2021</span>
+                </div>
+                
+                <div class="cert-card fade-in-up delay-3">
+                    <h4>EU-anerkannter Ingenieurabschluss</h4>
+                    <p>Ingenieur (Industrie)-Abschluss vollständig homologiert durch das spanische Ministerium für Universitäten (2024). Verleiht volle Berufsrechte in der EU/EFTA.</p>
+                    <span class="cert-badge">Volle EU-Berufsrechte</span>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <p><strong>Berufsverbände:</strong> Offizielle Hochschule der Industrietechnischen Ingenieure von Álava (Spanien) | Ingenieurkammer von Venezuela</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="education section" id="education">
+        <div class="container">
+            <div class="section-title">
+                <h2>Akademische Ausbildung</h2>
+            </div>
+            
+            <div class="education-container">
+                <div class="education-card fade-in-up">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Master-Abschluss in Ingenieurwesen (Industrie)</h3>
+                        <span class="institution">UNED (Nationale Universität für Fernunterricht, Spanien)</span>
+                        <span class="period">2024 - Heute (in Bearbeitung)</span>
+                        <p>Spezialisierung in <strong>Elektronik- und Automatisierungstechnik</strong>. Offizieller Abschluss, der für den Beruf des Ingenieurs (Industrie) gemäß Verordnung CIN/311/2009 qualifiziert.</p>
+                    </div>
+                </div>
+                
+                <div class="education-card fade-in-up delay-1">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Bachelor-Abschluss in Ingenieurwesen (Industrie)</h3>
+                        <span class="institution">Universidad Nacional Experimental Francisco de Miranda, Venezuela</span>
+                        <span class="period">Offiziell in Spanien homologiert (Januar 2024)</span>
+                        <p>Universitätsabschluss, der vom spanischen Ministerium für Wissenschaft, Innovation und Universitäten als äquivalent zu einem spanischen Universitätsabschluss in <strong>Technischem Ingenieurwesen (Industrie) mit Schwerpunkt Mechanik</strong> anerkannt wurde, mit voller Gültigkeit in der EU.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Professioneller Kontakt</h2>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card fade-in-up">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>E-Mail</h4>
+                            <p>urieperoz@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card fade-in-up delay-1">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telefon / WhatsApp</h4>
+                            <p>+34 688 778 755</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card fade-in-up delay-2">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Standort</h4>
+                            <p>Vitoria-Gasteiz, Álava, Spanien</p>
+                            <p><small>Verfügbar für nationale und internationale Mobilität</small></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card fade-in-up delay-3">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/ramón-uriepero-8449307b</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-card fade-in-up">
+                        <div class="contact-details">
+                            <h4>Für Personalvermittler & Arbeitgeber</h4>
+                            <p>Ich bin ein Senior Ingenieur (Industrie) mit einem <strong>EU-anerkannten Abschluss</strong> und umfangreicher praktischer Erfahrung in Automatisierung, Instandhaltung und Prozessoptimierung. Mein Profil wird durch wichtige europäische Sicherheits- und Technikzertifizierungen (VCA, Aufzugstechniker, AutoCAD, etc.) gestärkt.</p>
+                            <p>Ich bin offen für neue Herausforderungen und Möglichkeiten, bei denen ich meine technische Expertise und Problemlösungsfähigkeiten in komplexe Industrieprojekte einbringen kann.</p>
+                            <p style="margin-top: 15px; font-size: 0.95rem; color: var(--primary-color);"><i class="fas fa-info-circle"></i> <strong>Wichtige Dokumente verfügbar:</strong> Vollständiger Lebenslauf (PDF), Homologationsbescheinigung, VCA-Diplom, Berufliche Referenzen.</p>
+                            <div style="margin-top: 20px;">
+                                <a href="mailto:urieperoz@gmail.com?subject=Professionelle Anfrage" class="btn btn-primary">E-Mail-Anfrage senden</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer>
@@ -2857,57 +1869,52 @@
                 <div class="footer-about">
                     <div class="footer-logo">
                         <i class="fas fa-user-tie"></i>
-                        <span class="lang-en">Uriepero Ramón</span>
-                        <span class="lang-nl" style="display: none;">Uriepero Ramón</span>
-                        <span class="lang-de" style="display: none;">Uriepero Ramón</span>
+                        <span>Ramón Uriepero</span>
                     </div>
-                    <p class="lang-en">Industrial Engineer specialized in automation, energy efficiency and technical project management with international experience and multiple official certifications.</p>
-                    <p class="lang-nl" style="display: none;">Industrieel Ingenieur gespecialiseerd in automatisering, energie-efficiëntie en technisch projectmanagement met internationale ervaring en meerdere officiële certificeringen.</p>
-                    <p class="lang-de" style="display: none;">Industrieingenieur spezialisiert auf Automatisierung, Energieeffizienz und technisches Projektmanagement mit internationaler Erfahrung und mehreren offiziellen Zertifizierungen.</p>
+                    <p>Senior Ingenieur (Industrie) spezialisiert auf technische Betriebsführung, Instandhaltung & Prozessoptimierung mit internationaler Erfahrung und mehreren EU-anerkannten Zertifizierungen.</p>
                     <div class="social-links">
-                        <a href="mailto:urieperoz@gmail.com" title="Email">
+                        <a href="mailto:urieperoz@gmail.com" title="E-Mail">
                             <i class="fas fa-envelope"></i>
                         </a>
-                        <a href="tel:+34688778755" title="Phone">
+                        <a href="tel:+34688778755" title="Telefon">
                             <i class="fas fa-phone"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/ramón-uriepero-8449307b/?locale=en_US" target="_blank" title="LinkedIn">
+                        <a href="https://www.linkedin.com/in/ramón-uriepero-8449307b/?locale=de_DE" target="_blank" title="LinkedIn">
                             <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="resources/Uriepero_Ramon_Lebenslauf_DE.pdf" title="Lebenslauf herunterladen" download>
+                            <i class="fas fa-file-pdf"></i>
                         </a>
                     </div>
                 </div>
                 
                 <div class="footer-links">
-                    <h4 class="lang-en">Quick Links</h4>
-                    <h4 class="lang-nl" style="display: none;">Snelle Links</h4>
-                    <h4 class="lang-de" style="display: none;">Schnellzugriff</h4>
+                    <h4>Schnellnavigation</h4>
                     <ul>
-                        <li><a href="#home" class="lang-en">Home</a><a href="#home-nl" class="lang-nl" style="display: none;">Home</a><a href="#home-de" class="lang-de" style="display: none;">Start</a></li>
-                        <li><a href="#about" class="lang-en">About</a><a href="#about-nl" class="lang-nl" style="display: none;">Over</a><a href="#about-de" class="lang-de" style="display: none;">Über</a></li>
-                        <li><a href="#experience" class="lang-en">Experience</a><a href="#experience-nl" class="lang-nl" style="display: none;">Ervaring</a><a href="#experience-de" class="lang-de" style="display: none;">Erfahrung</a></li>
-                        <li><a href="#skills" class="lang-en">Skills</a><a href="#skills-nl" class="lang-nl" style="display: none;">Vaardigheden</a><a href="#skills-de" class="lang-de" style="display: none;">Fähigkeiten</a></li>
-                        <li><a href="#certifications" class="lang-en">Certifications</a><a href="#certifications-nl" class="lang-nl" style="display: none;">Certificeringen</a><a href="#certifications-de" class="lang-de" style="display: none;">Zertifizierungen</a></li>
-                        <li><a href="#education" class="lang-en">Education</a><a href="#education-nl" class="lang-nl" style="display: none;">Opleiding</a><a href="#education-de" class="lang-de" style="display: none;">Bildung</a></li>
-                        <li><a href="#contact" class="lang-en">Contact</a><a href="#contact-nl" class="lang-nl" style="display: none;">Contact</a><a href="#contact-de" class="lang-de" style="display: none;">Kontakt</a></li>
+                        <li><a href="#home">Start</a></li>
+                        <li><a href="#about">Über mich</a></li>
+                        <li><a href="#profile">Profil</a></li>
+                        <li><a href="#experience">Berufserfahrung</a></li>
+                        <li><a href="#projects">Schlüsselprojekte</a></li>
+                        <li><a href="#skills">Kompetenzen</a></li>
+                        <li><a href="#certifications">Zertifizierungen</a></li>
+                        <li><a href="#education">Ausbildung</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-contact">
-                    <h4 class="lang-en">Contact Information</h4>
-                    <h4 class="lang-nl" style="display: none;">Contactgegevens</h4>
-                    <h4 class="lang-de" style="display: none;">Kontaktinformation</h4>
+                    <h4>Kontaktinformationen</h4>
                     <p><i class="fas fa-envelope"></i> urieperoz@gmail.com</p>
                     <p><i class="fas fa-phone"></i> +34 688 778 755</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Vitoria-Gasteiz, Álava, Spain</p>
-                    <p><i class="fas fa-globe"></i> urieperor.github.io/cv_uriepero_ramon</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Vitoria-Gasteiz, Álava, Spanien</p>
+                    <p><i class="fas fa-globe"></i> <a href="https://urieperoramon.com" target="_blank">www.urieperoramon.com</a></p>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>&copy; <span id="currentYear"></span> Uriepero Ramón. <span class="lang-en">All rights reserved.</span><span class="lang-nl" style="display: none;">Alle rechten voorbehouden.</span><span class="lang-de" style="display: none;">Alle Rechte vorbehalten.</span></p>
-                <p class="lang-en">Developed with <i class="fas fa-heart" style="color: #e74c3c;"></i> for technical professionals</p>
-                <p class="lang-nl" style="display: none;">Ontwikkeld met <i class="fas fa-heart" style="color: #e74c3c;"></i> voor technische professionals</p>
-                <p class="lang-de" style="display: none;">Entwickelt mit <i class="fas fa-heart" style="color: #e74c3c;"></i> für technische Fachkräfte</p>
+                <p>&copy; <span id="currentYear"></span> Ramón Uriepero. Alle Rechte vorbehalten.</p>
+                <p>Senior Ingenieur (Industrie) | Spezialist für Automatisierung & Instandhaltung</p>
             </div>
         </div>
     </footer>
@@ -2989,183 +1996,6 @@
                 }
             });
         });
-        
-        // Handle contact form submission
-        const contactForms = document.querySelectorAll('form[id^="contactForm"]');
-        contactForms.forEach(form => {
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Here you would normally send the form to a server
-                // For now, just show a success message
-                const currentLang = document.querySelector('.lang-btn.active').getAttribute('data-lang');
-                let message = 'Thank you for your message! I will contact you as soon as possible.';
-                
-                if (currentLang === 'nl') {
-                    message = 'Bedankt voor uw bericht! Ik neem zo snel mogelijk contact met u op.';
-                } else if (currentLang === 'de') {
-                    message = 'Vielen Dank für Ihre Nachricht! Ich werde mich so schnell wie möglich bei Ihnen melden.';
-                }
-                
-                alert(message);
-                this.reset();
-            });
-        });
-        
-        // Language switching
-        const langButtons = document.querySelectorAll('.lang-btn');
-        langButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const lang = this.getAttribute('data-lang');
-                
-                // Update active button
-                langButtons.forEach(btn => btn.classList.remove('active'));
-                this.classList.add('active');
-                
-                // Show/hide language content
-                document.querySelectorAll('.lang-content').forEach(content => {
-                    content.classList.remove('active');
-                    content.style.display = 'none';
-                });
-                
-                document.getElementById(`content-${lang}`).classList.add('active');
-                document.getElementById(`content-${lang}`).style.display = 'block';
-                
-                // Update language-specific elements
-                document.querySelectorAll(`.lang-${lang}`).forEach(el => {
-                    el.style.display = 'inline';
-                });
-                
-                // Hide other language elements
-                ['en', 'nl', 'de'].forEach(l => {
-                    if (l !== lang) {
-                        document.querySelectorAll(`.lang-${l}`).forEach(el => {
-                            el.style.display = 'none';
-                        });
-                    }
-                });
-                
-                // Update navigation active state
-                updateNavigationForLanguage(lang);
-            });
-        });
-        
-        function updateNavigationForLanguage(lang) {
-            // Update navigation links
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.classList.remove('active');
-                
-                // Show/hide language-specific links
-                if (link.classList.contains(`lang-${lang}`)) {
-                    link.style.display = 'inline';
-                } else {
-                    link.style.display = 'none';
-                }
-            });
-            
-            // Set first link as active for the current language
-            const firstLink = document.querySelector(`.nav-links a.lang-${lang}`);
-            if (firstLink) {
-                firstLink.classList.add('active');
-            }
-        }
-        
-        // Download HTML CV
-        document.getElementById('downloadHtml').addEventListener('click', function() {
-            downloadFile('Uriepero_Ramon_CV.html', document.documentElement.outerHTML, 'text/html');
-        });
-        
-        document.getElementById('downloadHtmlNl').addEventListener('click', function() {
-            downloadFile('Uriepero_Ramon_CV_NL.html', document.documentElement.outerHTML, 'text/html');
-        });
-        
-        document.getElementById('downloadHtmlDe').addEventListener('click', function() {
-            downloadFile('Uriepero_Ramon_CV_DE.html', document.documentElement.outerHTML, 'text/html');
-        });
-        
-        // Download PDF CV
-        document.getElementById('downloadPdf').addEventListener('click', function() {
-            downloadPDF('Uriepero_Ramon_CV.pdf');
-        });
-        
-        document.getElementById('downloadPdf2').addEventListener('click', function() {
-            downloadPDF('Uriepero_Ramon_CV.pdf');
-        });
-        
-        document.getElementById('downloadPdfNl').addEventListener('click', function() {
-            downloadPDF('Uriepero_Ramon_CV_NL.pdf');
-        });
-        
-        document.getElementById('downloadPdfNl2').addEventListener('click', function() {
-            downloadPDF('Uriepero_Ramon_CV_NL.pdf');
-        });
-        
-        document.getElementById('downloadPdfDe').addEventListener('click', function() {
-            downloadPDF('Uriepero_Ramon_CV_DE.pdf');
-        });
-        
-        document.getElementById('downloadPdfDe2').addEventListener('click', function() {
-            downloadPDF('Uriepero_Ramon_CV_DE.pdf');
-        });
-        
-        function downloadFile(filename, content, contentType) {
-            const element = document.createElement('a');
-            const file = new Blob([content], {type: contentType});
-            element.href = URL.createObjectURL(file);
-            element.download = filename;
-            document.body.appendChild(element);
-            element.click();
-            document.body.removeChild(element);
-        }
-        
-        function downloadPDF(filename) {
-            // In a real implementation, this would point to an actual PDF file
-            // For now, we'll create a sample PDF download
-            const currentLang = document.querySelector('.lang-btn.active').getAttribute('data-lang');
-            let message = 'PDF download functionality would be implemented with a real PDF file. For now, generating a sample...';
-            
-            if (currentLang === 'nl') {
-                message = 'PDF-downloadfunctionaliteit zou worden geïmplementeerd met een echt PDF-bestand. Voor nu genereren we een voorbeeld...';
-            } else if (currentLang === 'de') {
-                message = 'PDF-Download-Funktionalität würde mit einer echten PDF-Datei implementiert werden. Für jetzt generieren wir ein Beispiel...';
-            }
-            
-            alert(message);
-            
-            // Create a simple PDF content (in reality, this would be a proper PDF)
-            const pdfContent = `
-                %PDF-1.4
-                1 0 obj
-                << /Type /Catalog /Pages 2 0 R >>
-                endobj
-                2 0 obj
-                << /Type /Pages /Kids [3 0 R] /Count 1 >>
-                endobj
-                3 0 obj
-                << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R >>
-                endobj
-                4 0 obj
-                << /Length 44 >>
-                stream
-                BT /F1 12 Tf 72 720 Td (Uriepero Ramon - CV) Tj ET
-                endstream
-                endobj
-                xref
-                0 5
-                0000000000 65535 f
-                0000000010 00000 n
-                0000000053 00000 n
-                0000000102 00000 n
-                0000000177 00000 n
-                trailer
-                << /Size 5 /Root 1 0 R >>
-                startxref
-                246
-                %%EOF
-            `;
-            
-            downloadFile(filename, pdfContent, 'application/pdf');
-        }
         
         // Fade effect on scroll
         const fadeElements = document.querySelectorAll('.fade-in-up');
